@@ -2724,7 +2724,11 @@ ul {
 }
 
 ul li {
-  padding-left: 0.5em;
+  padding-left: 3.5em;
+}
+
+ul li:first-child {
+  padding-left: 0em;
 }
 
 ul.alt {
@@ -2883,11 +2887,6 @@ ul.contact {
   padding: 0;
 }
 
-ul.contact > li {
-  padding: 0;
-  margin: 1.5em 0 0 0;
-}
-
 ul.contact > li:first-child {
   margin-top: 0;
 }
@@ -2998,7 +2997,6 @@ header h6 + p {
 
 .split > :nth-child(2n - 1) {
   padding-right: 2.5em;
-  border-right: solid 1px rgba(255, 255, 255, 0.15);
 }
 
 .split > :nth-child(2n) {
@@ -3977,6 +3975,10 @@ body.is-preload #sidebar nav ul li {
 
 .actions {
   margin-top: 1.5em;
+}
+
+.contact {
+  display: flex;
 }
 
 /** TimeLine **/
