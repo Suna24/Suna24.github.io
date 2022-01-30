@@ -9,6 +9,7 @@
 		<title>Bastien TAROT - Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="./images/icon.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -41,8 +42,40 @@
 									<div class="inner">
 										<h1 class="major">Rush Hour</h1>
 										<span class="image fit"><img src="images/icon_rush_hour.png" alt="" /></span>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-										<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+										<h3>Description</h3>
+										<p>Le but de ce projet était de réaliser une application Android sous la forme d'un petit jeu. J'ai donc choisi de 
+											m'inspirer du jeu de société Rush Hour pour réaliser ce dernier. Il s'agit d'un jeu où le joueur doit faire sortir la 
+											voiture blanche du plateau. Seulement d'autres voitures bloquent le passage. Le joueur doit alors faire bouger les autres
+											voitures pour libérer la blanche du plateau en appuyant sur l'avant du véhicule s'il souhaite la bouger vers l'avant et 
+											inversement s'il veut la faire se mouvoir vers l'arrière. 
+											Le jeu dispose d'un tableau des scores avec un système d'étoiles, de 40 niveaux uniques, ainsi que de musiques !
+										</p>
+
+										<h3>Aspects Techniques</h3>
+										<p>Pour réaliser ce projet, j'ai utilisé le langage Java et l'environnement de développement Android Studio. J'ai également
+											travaillé avec Firebase pour la gestion des scores et l'enregistrement du nombre d'étoiles. Le jeu propose également une
+											connection à Google la première fois que vous lancez le jeu.
+										</p>
+
+										<h3>Quelques photos de l'application</h3>
+
+										<section id="photosRushHour">
+											<img src="./images/rushhour_accueil.jpg" alt="Photo de la page d'accueil de RushHour"/>
+											<img src="./images/rushhour_niveau_liste.jpg" alt="Photo de la liste des niveaux de RushHour"/>
+											<img src="./images/rushhour_niveau.jpg" alt="Photo d'un début de niveau de RushHour"/>
+											<img src="./images/rushhour_niveau_fini.jpg" alt="Photo de la fin d'un niveau de RushHour"/>
+											<img src="./images/rushhour_scores.jpg" alt="Photo de la page des scores de RushHour"/>
+										</section>
+
+										<h3>Où trouver notre projet ?</h3>
+										<p>Si vous voulez voir le code source de ce jeu ou bien même le télécharger pour pouvoir y jouer, vous trouver le
+											repository Github via <a href="https://github.com/Suna24/Rush_Hour">ce lien</a>.
+										</p>
+
+										<h3>Maintenance & Veille Technologique</h3>
+										<p>En construction...</p>
+								
 									</div>
 								</section>
 							</div>
@@ -52,8 +85,43 @@
 									<div class="inner">
 										<h1 class="major">CityDex</h1>
 										<span class="image fit"><img src="images/icon_citydex.png" alt="" /></span>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-										<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+										
+										<h3>Description</h3>
+
+										<p>Dans le cadre d'un projet de semestre, nous avons du créer une application mobile android de type pokédex répertoriant des photos 
+											prises par l’utilisateur regroupées autour d'une thématique : les panneaux d'agglomérations. Il est important de noter que cette 
+											application traite seulement des panneaux d’agglomération sur le territoire français regroupant donc la métropole française mais 
+											aussi les territoires d’outre mer (Mayotte, La Réunion, Saint Pierre et Miquelon…). L’application a pour nom CityDex. 
+											L’utilisateur collectionne donc des panneaux dans son CityDex, l’objectif étant d’en avoir le plus possible.</p>
+
+										<p>Cette application permet aux utilisateurs de répertorier les différentes villes où ils sont allés, et d’avoir pour preuve les 
+											panneaux d’agglomérations. Cette application a aussi pour but de fournir diverses informations aux utilisateurs sur les villes 
+											dont ils ont pris le panneau en photo.</p>
+									
+										<h3>Aspects Techniques</h3>
+										
+										<p>Nous avons du pour ce projet utiliser le langage Java et le logiciel Android Studio comme environnement de développement. 
+											Pour reconnaître un panneau dans une image, nous avons entraîné un modèle TensorFlow avec plus de 250 images de panneaux que nous 
+											avons labelisées. Nous avons également utilisé la librairie Tesseract pour la reconnaissance de caractère et ainsi reconnaître le nom
+											de la ville sur le panneau</p>
+
+										<h3>Quelques photos de l'application</h3>
+
+										<section id="photosCityDex">
+											<img src="./images/citydex_page_de_chargement.jpg" alt="Photo de la page de chargement de CityDex"/>
+											<img src="./images/citydex_page_accueil.jpg" alt="Photo de la page d'accueil de CityDex"/>
+											<img src="./images/citydex_page_collection.jpg" alt="Photo de la page de collection de CityDex"/>
+											<img src="./images/citydex_page_succes.jpg" alt="Photo de la page des succès de CityDex"/>
+											<img src="./images/citydex_page_ville.png" alt="Photo de la page de description d'une ville"/>
+										</section>
+
+										<h3>Où trouver notre projet ?</h3>
+
+										<p>Vous pouvez avoir accès directement au code source de notre application via <a href="https://github.com/TLBail/PtutS3Android">ce lien</a> mais également
+										télécharger l'application directement sur le PlayStore en écrivant CityDex dans la barre de recherche !</p>
+
+										<h3>Maintenance & Veille Technologique</h3>
+										<p>En construction...</p>
 									</div>
 								</section>
 							</div>
@@ -63,8 +131,36 @@
 									<div class="inner">
 										<h1 class="major">Cocktails</h1>
 										<span class="image fit"><img src="images/icon_cocktails.png" alt="" /></span>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-										<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+										<h3>Description</h3>
+
+										<p>Ce projet avait pour but de mettre en application nos compétence côté Web serveur. Nous avons donc décidé de faire un
+											site internet listant des cocktails avec différentes informations à partir d'une base de données et la possibilité
+											pour l'utilisateur de chercher un cocktail par son nom ou de chercher les cocktails qu'il est possible de réaliser à 
+											partir d'ingrédients rentrés par l'utilisateur.
+										</p>
+
+										<h3>Aspects Techniques</h3>
+
+										<p>Nous avons réalisé ce projet avec, côté client HTML5 et CSS3 et côté serveur le langage PHP ainsi qu'une base de données
+											PHP MyAdmin. Nous avons mis en place lors des recherches utilisateurs de l'Ajax pour que les requêtes se fassent dynamiquement
+											et qu'une seule partie de la page soit rechargée à chaque requête.
+										</p>
+
+										<h3>Quelques photos du site Internet</h3>
+
+										<section id="photosCocktails">
+											<img src="./images/cocktails_chargement.png" alt="Page de chargement de Cocktails"/>
+											<img src="./images/cocktails_ingredient.png" alt="Page principale de Cocktails"/>
+										</section>
+
+										<h3>Où trouver notre projet ?</h3>
+
+										<p>Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien</a></p>
+
+										<h3>Maintenance & Veille Technologique</h3>
+										<p>En construction...</p>
+
 									</div>
 								</section>
 							  </div>

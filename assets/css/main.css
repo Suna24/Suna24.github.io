@@ -2692,7 +2692,10 @@ input[type="radio"] + label:before {
 }
 
 .image.fit img {
-  width: 100%;
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 5%;
 }
 
 .image.main {
@@ -3956,31 +3959,6 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
-/** My CSS **/
-.swiper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.swiper-pagination {
-  position: relative;
-  bottom: 200px;
-}
-
-.swiper img {
-  width: 100px;
-  height: 100px;
-}
-
-.actions {
-  margin-top: 1.5em;
-}
-
-.contact {
-  display: flex;
-}
-
 /** TimeLine **/
 #timeline {
   display: flex;
@@ -4089,4 +4067,50 @@ body.is-preload #sidebar nav ul li {
   background-position: center center;
   transition: filter 0.5s ease;
   filter: grayscale(50%);
+}
+
+/** My CSS **/
+.swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+
+.swiper img {
+  width: 100px;
+  height: 100px;
+}
+
+.actions {
+  margin-top: 1.5em;
+}
+
+.contact {
+  display: flex;
+}
+
+#photosCityDex img {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  height: 500px;
+  width: auto;
+}
+
+#photosCocktails img {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  height: auto;
+  width: 600px;
+}
+
+#photosRushHour img {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  height: 500px;
+  width: auto;
 }
