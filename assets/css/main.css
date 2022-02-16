@@ -4114,3 +4114,8 @@ body.is-preload #sidebar nav ul li {
   height: 500px;
   width: auto;
 }
+
+.VeilleTechno li {
+  padding-left: 0em;
+  text-decoration: underline;
+}
