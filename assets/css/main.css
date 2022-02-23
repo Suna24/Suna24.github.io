@@ -4119,3 +4119,9 @@ body.is-preload #sidebar nav ul li {
   padding-left: 0em;
   text-decoration: underline;
 }
+
+#git {
+  text-align: center;
+  position: relative;
+  bottom: 2em;
+}
