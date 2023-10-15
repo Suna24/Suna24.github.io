@@ -4124,6 +4124,13 @@ body.is-preload #sidebar nav ul li {
   width: auto;
 }
 
+#photoLethalLeague img {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  height: auto;
+  width: 600px;
+}
+
 .VeilleTechno li {
   padding-left: 0em;
   text-decoration: underline;
