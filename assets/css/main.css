@@ -3960,12 +3960,18 @@ body.is-preload #sidebar nav ul li {
 }
 
 /** TimeLine **/
-#timeline {
+#timeline, #abroad-timeline {
   display: flex;
   background-color: #031625;
 }
+#timeline {
+  margin-bottom: 5%;
+}
 #timeline:hover .tl-item {
   width: 31%;
+}
+#abroad-timeline .tl-item {
+  width: 50%;
 }
 .tl-item {
   transform: translate3d(0, 0, 0);
@@ -4005,6 +4011,9 @@ body.is-preload #sidebar nav ul li {
 }
 .tl-item:hover {
   width: 40% !important;
+}
+#abroad-timeline .tl-item:hover {
+  width: 60% !important;
 }
 .tl-item:hover:after {
   opacity: 0;
