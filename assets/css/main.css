@@ -4134,3 +4134,12 @@ body.is-preload #sidebar nav ul li {
   position: relative;
   bottom: 2em;
 }
+
+/*Hide scrollbar*/
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
