@@ -4086,11 +4086,6 @@ body.is-preload #sidebar nav ul li {
   bottom: 0;
 }
 
-.swiper img {
-  width: 100px;
-  height: 100px;
-}
-
 .actions {
   margin-top: 1.5em;
 }
@@ -4145,4 +4140,10 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+#octopus_poster, #octopus_worflow {
+  width: 60%;
+  height: auto;
+  margin-bottom: 2%;
 }

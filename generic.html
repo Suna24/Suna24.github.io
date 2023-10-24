@@ -357,29 +357,55 @@
 							<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">OCTOPUS [En construction]</h1>
+										<h1 class="major">OCTOPUS</h1>
 
 										<span class="image fit"><img src="images/icon_octopus.png" alt="Octopus logo" /></span>
 
 										<h3>Description</h3>
 
 										<p>
-											Dans le cadre de mon projet scientifique et technique de 4ème année à l'ESIEA...
-											TODO: Définir une station blanche
+											Dans le cadre de mon projet scientifique et technique de 4ème année à l'ESIEA, nous devions reprendre un projet déjà existant
+											d'une station blanche. Une station blanche est un dispositif specialement conçu pour analyser et examiner le contenu de clés USB
+											de manière sécurisée et sans altération. La station se charge ensuite de supprimer les éventuels fichiers malveillants de la clé.
+											Le projet est entièrement open-source.
 										</p>
+
+										<h3>Fonctionnement</h3>
+
+										<p>
+											Le fonctionnement de la station se fait selon l'image ci-dessous. On a ici 3 machines différentes : la station Octopus
+											sur laquelle l'utilisateur va venir brancher sa clé USB qui est dotée d'une interface web; le contrôleur qui est une machine qui va venir mettre à jour la station
+											(et éventuellement toutes les stations en réseau par la suite) et enfin le serveur de logs qui va stocker les données de la station
+											une fois l'analyse de la clé USB terminée. La station blanche Octopus est capable d'acceuillir jusqu'à 4 clés USB en même temps.
+										</p>
+
+										<img id="octopus_worflow" src="./images/octopus_workflow.png" alt="Fonctionnement de la station Octopus" />
+
+										<h3>Objectifs du projet</h3>
+
+										<div>
+											Nous avons établi 3 objectifs majeurs à réaliser pour le premier semestre :
+											<ul>
+												<li>Refonte de l'interface graphique</li>
+												<li>Amélioration du déploiement</li>
+												<li>Ajout de nouveaux antivirus sélectionné par le contrôleur</li>
+											</ul>
+										</div>
 
 										<h3>Aspects techniques</h3>
 
 										<p>
-											La station blanche originelle a été développée avec ...
+											La station blanche originelle a été développée majoritairement en Bash; le déploiement est quant à lui fait avec Ansible et
+											l'interface web de la station a été réalisée avec NodeJS et Vue.js. Après avoir pris en main le projet, nous avons décidé
+											de refaire l'interface graphique avec React et de refaire le backend à cause d'une librairie dépréciée qui rendait le travail
+											vraiment compliqué.
 										</p>
 
 										<h3>Affiche projet</h3>
 
-										<img src="./images/octopus_poster.png" alt="Affiche projet d'Octopus"/>
-
-										<h3>Site web associé à la station blanche</h3>
+										<img id="octopus_poster" src="./images/octopus_poster.png" alt="Affiche projet d'Octopus"/>
 									</div>
+									<div id="git"><button><a href="https://gitlab.esiea.fr/cbourcier/octopus">Code Source du projet</a></button></div>
 								</section>
 							</div>
 						</div>
