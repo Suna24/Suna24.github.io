@@ -23,8 +23,6 @@ swiper = new Swiper('.swiper', {
 function getIndex(){
   let index = window.location.hash;
   index = index.substring(1);
-  console.log(index);
-
   return parseInt(index);
 }
 
