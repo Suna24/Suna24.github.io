@@ -2890,6 +2890,10 @@ ul.contact > li:first-child {
   margin-top: 0;
 }
 
+ul.contact > li {
+  margin-right: 1.5em;
+}
+
 /* Icons */
 
 ul.icons {
