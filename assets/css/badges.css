@@ -1,0 +1,122 @@
+.badge-container {
+    display: flex;
+    gap: 12px;
+}
+
+#github-badge {
+min-width: 327px;
+height: 84px;
+background-image: url(images/github_background.png);
+background-size: cover;
+object-fit: fill;
+display: flex;
+align-items: center;
+gap: 12px;
+user-select: none;
+cursor: pointer;
+border-radius: 12px;
+}
+
+.github-avatar-outer {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+margin-right: 0;
+padding: 2px;
+margin-left: 10px;
+}
+
+.github-avatar {
+display: block;
+width: 60px;
+height: 60px;
+float: left;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+border-radius: 50%;
+box-sizing: content-box; /* Needed for border to stop changing image width*/
+background-color: #121212;
+object-fit: cover;
+box-shadow: 0 0 3px 0 #303030;
+}
+
+.badge-user-details {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.details-icon-wrapper {
+display: flex;
+gap: 5px;
+}
+
+.details-wrapper {
+display: flex;
+gap: 8px;
+}
+
+.title-wrapper {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.user_name {
+font-family: 'Ubuntu', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #f9f9fb;
+transform: rotate(0.2deg);
+
+max-width: 135px;
+text-overflow: ellipsis;
+display: block;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.detail-icons {
+font-weight: 900;
+text-align: center;
+width: 12px;
+height: 13px;
+font-style: normal;
+font-size: 13px;
+line-height: 13px;
+
+transform: rotate(0.2deg);
+}
+
+.details-text {
+font-family: Ubuntu, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+color: #ffffff;
+transform: rotate(0.2deg);
+margin-left: 3px;
+}
+
+.github-link {
+text-decoration: none;
+border: none;
+font-family: Ubuntu, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+margin: 0;
+
+color: #f9f9fb;
+transform: rotate(0.2deg);
+}
+
+.github-link:hover {
+text-decoration: underline;
+}

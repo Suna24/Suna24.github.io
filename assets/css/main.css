@@ -3350,7 +3350,7 @@ table.alt tfoot {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 body.is-ie .wrapper.fullscreen {
@@ -4090,10 +4090,6 @@ body.is-preload #sidebar nav ul li {
   bottom: 0;
 }
 
-.actions {
-  margin-top: 1.5em;
-}
-
 .contact {
   display: flex;
 }
@@ -4150,4 +4146,11 @@ body {
   width: 60%;
   height: auto;
   margin-bottom: 2%;
+}
+
+/* Iframes */
+#tryhackme {
+  margin-bottom: -2em;
+  width: 60em;
+  height: 10em;
 }
