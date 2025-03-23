@@ -4148,6 +4148,12 @@ body {
   margin-bottom: 2%;
 }
 
+#distrib-data-emotions {
+  width: 40%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
 /* Iframes */
 #tryhackme {
   margin-bottom: -2em;
