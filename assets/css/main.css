@@ -3149,11 +3149,11 @@ body.is-ie .spotlights > section {
   opacity: 1;
 }
 
-.spotlights > section:nth-child(2) {
+.spotlights > section:nth-child(2n) {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.spotlights > section:nth-child(3) {
+.spotlights > section:nth-child(2n + 1) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
