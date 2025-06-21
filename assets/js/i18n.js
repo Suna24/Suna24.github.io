@@ -83,6 +83,52 @@ $(function () {
                   description:
                     "Small mobile application based on the Rush Hour board game coded in Java.",
                 },
+                citydex: {
+                  title: "CityDex",
+                  description:
+                    "Java coded mobile application for collecting city signs.",
+                },
+                cocktails: {
+                  title: "Cocktails",
+                  description:
+                    "Website referencing different cocktails and allowing the search for a cocktail and various ingredients.",
+                },
+                lethal_league: {
+                  title: "Lethal League",
+                  description:
+                    "Scientific and Technical Project: Projectile battle game developed in Python with Pygame.",
+                },
+                octopus: {
+                  title: "Octopus",
+                  description:
+                    "Scientific and Technical Project: Development of a white station with Javascript, Bash, and Ansible.",
+                },
+                hearthstone: {
+                  title: "Hearthstone BattleGround",
+                  description:
+                    "Project developed in C++ as part of the object-oriented programming course.",
+                },
+                ml_challenge: {
+                  title: "Machine Learning Challenge",
+                  description:
+                    "Development of an AI model for emotion recognition on a human face.",
+                },
+                nlp: {
+                  title: "Natural Language Processing: Toxicity Detection",
+                  description:
+                    "Development and fine-tuning of a large language model specialized in detecting toxicity in text conversations.",
+                },
+                breast_cancer: {
+                  title: "Research Project: The Use of AI in the Medical Field",
+                  description:
+                    "Prediction of local sequelae pain from breast radiotherapy treatments using Bayesian networks.",
+                  rgpd: "The source code is not available for reasons related to the <b>General Data Protection Regulation (GDPR)</b>",
+                },
+                optimization: {
+                  title: "Combinatorial Optimization",
+                  description:
+                    "Creation of algorithms for solving a complex NP problem: Finding a maximum clique in a graph.",
+                },
               },
               contact: {
                 title: "Contact",
@@ -151,6 +197,54 @@ $(function () {
                   title: "Rush Hour",
                   description:
                     "Petite application mobile basée sur le jeu de société Rush Hour codée en Java.",
+                },
+                citydex: {
+                  title: "CityDex",
+                  description:
+                    "Application mobile de collection de panneaux d'agglomération codée en Java.",
+                },
+                cocktails: {
+                  title: "Cocktails",
+                  description:
+                    "Site Internet référançant différents cocktails et offrant la possibilité de recherche un cocktail et différents ingrédients.",
+                },
+                lethal_league: {
+                  title: "Lethal League",
+                  description:
+                    "Projet Scientifique et Technique : Jeu de combat de projectiles développé en Python avec Pygame.",
+                },
+                octopus: {
+                  title: "Octopus",
+                  description:
+                    "Projet Scientifique et Technique : Développement d'une station blanche avec Javascript, Bash et Ansible.",
+                },
+                hearthstone: {
+                  title: "Hearthstone BattleGround",
+                  description:
+                    "Projet réalisé en C++ dans le cadre du cours de programmation orientée objet.",
+                },
+                ml_challenge: {
+                  title: "Machine Learning Challenge",
+                  description:
+                    "Développement d'un modèle d'IA pour la reconnaissance d'émotions sur un visage humain.",
+                },
+                nlp: {
+                  title:
+                    "Traitement du langage naturel : Détection de toxicités",
+                  description:
+                    "Développement et finetuning d'un grand modèle de langage spécialisé dans la détection de toxicités au sein des conversations textuelles.",
+                },
+                breast_cancer: {
+                  title:
+                    "Projet de recherche : L'utilisation de l'IA dans le domaine médical",
+                  description:
+                    "Prédiction de la douleur locale séquellaire des traitements de radiothérapie mammaires à l'aide des réseaux bayésiens.",
+                  rgpd: "Le code source n'est pas disponible pour des raisons liées à la <b>Réglementation Générale sur la Protection des Données (RGPD)</b>",
+                },
+                optimization: {
+                  title: "Optimisation Combinatoire",
+                  description:
+                    "Création d'algorithmes pour la résolution d'un problème NP complexe : Recherche d'une clique maximum dans un graphe.",
                 },
               },
               contact: {
