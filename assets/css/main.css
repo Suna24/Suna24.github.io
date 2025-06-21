@@ -4071,6 +4071,7 @@ body.is-preload #sidebar nav ul li {
 }
 .tl-year {
   position: absolute;
+  width: 60%;
   top: 40%;
   left: 50%;
   transform: translateX(-50%) translateY(-150%);
@@ -4085,6 +4086,7 @@ body.is-preload #sidebar nav ul li {
   line-height: 0;
   position: relative;
   top: 1em;
+  text-align: center;
 }
 .tl-bg {
   transform: translate3d(0, 0, 0);
