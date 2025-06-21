@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll(".filter-button");
-const sections = document.querySelectorAll("#two > section");
+const sections = document.querySelectorAll("#projects > section");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {

@@ -25,14 +25,15 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
+					<select name="language" id="languageSwitcher"></select>
 					<nav>
 						<ul>
-							<li><a href="#intro">Accueil</a></li>
-							<li><a href="#zero">Mon parcours</a></li>
-							<li><a href="#experience">Mes expériences professionnelles</a></li>
-							<li><a href="#one">Mes compétences</a></li>
-							<li><a href="#two">Mes projets</a></li>
-							<li><a href="#three">Contact</a></li>
+							<li><a href="#intro" data-i18n="nav.home">Accueil</a></li>
+							<li><a href="#education" data-i18n="nav.education">Mon parcours</a></li>
+							<li><a href="#experience" data-i18n="nav.experience">Mes expériences professionnelles</a></li>
+							<li><a href="#skills" data-i18n="nav.skills">Mes compétences</a></li>
+							<li><a href="#projects" data-i18n="nav.projects">Mes projets</a></li>
+							<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,13 +45,19 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Bienvenue sur mon Portfolio !</h1>
-							<p>
-								Je suis Bastien TAROT, étudiant en dernière année d'école d'ingénieur à <b>l'ESIEA</b>, avec une spécialisation en <b>Intelligence Artificielle & Data Science</b>. Vous trouverez ici, de nombreux projets que j'ai pu réaliser durant mes années d'études et sur mon temps libre !<br><br>
-								
-								Bien que la majorité des projets que vous trouverez ici soient liés à l'utilisation de l'IA, je suis également passionné par la <b>Cybersécurité</b>, domaine dans lequel je me forme et réalise des challenges sur la plateforme TryHackMe.<br><br>
+							<h1 data-i18n="intro.title">Bienvenue sur mon Portfolio !</h1>
 
-								N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur mon profil !<br>
+							<p>
+								Je suis Bastien TAROT, étudiant en dernière année d'école d'ingénieur à <b>l'ESIEA</b>, avec une spécialisation en <b>Intelligence Artificielle & Data Science</b>. Vous trouverez ici, de nombreux projets que j'ai pu réaliser durant mes années d'études et sur mon temps libre !
+							</p>
+
+							<p>
+								Bien que la majorité des projets que vous trouverez ici soient liés à l'utilisation de l'IA, je suis également passionné par la <b>Cybersécurité</b>, domaine dans lequel je me forme et réalise des challenges sur la plateforme TryHackMe.
+
+							</p>
+
+							<p>
+								N'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur mon profil !
 							</p>
 
 							<div class="badge-container">
@@ -84,16 +91,16 @@
 							</div>
 
 							<ul class="actions">
-								<li><a href="CV-BastienTAROT.pdf" class="button">Voir mon CV</a></li>
+								<li><a data-i18n="intro.cv" href="CV-BastienTAROT.pdf" class="button">Voir mon CV</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- Zero -->
-				 <section id="zero" class="wrapper style2 spotlights">
+				<!-- Education -->
+				 <section id="education" class="wrapper style2 spotlights">
 					<div class="inner">
-						<h2>Mon parcours</h2>
-						<p>Vous trouverez ci-dessous les différentes étapes de mon parcours scolaire et professionnel.</p>
+						<h2 data-i18n="education.title">Formation</h2>
+						<p data-i18n="education.description">Vous trouverez ci-dessous les différentes étapes de mon parcours scolaire</p>
 
 						<!-- Timeline -->
 						<section id="timeline">
@@ -184,20 +191,20 @@
 				<!-- Experience -->
 					<section id="experience" class="wrapper style1 fullscreen fade-up">
 						<div class="inner inner-exp">
-							<h2>Mes expériences professionnelles</h2>
+							<h2 data-i18n="experience.title">Expériences professionnelles</h2>
 
 							<div class="tl-item-exp">
 
 								<div class="tl-bg" style="background-image: url(./images/direxyon_background.png)"></div>
 
 								<div class="tl-year">
-									<p class="f2 heading--sanSerif">Avril 2022 - Juin 2022</p>
+									<p class="f2" data-i18n="experience.direxyon.date">Avril 2022 - Juin 2022</p>
 								</div>
 
 								<div class="tl-content">
 									<h1>DIREXYON TECHNOLOGIES</h1>
-									<h4>Stagiaire Analyste Qualité - 10 semaines</h4>
-									<p>
+									<h4 data-i18n="experience.direxyon.job">Stagiaire Analyste Qualité - 10 semaines</h4>
+									<p data-i18n="experience.direxyon.description">
 										Responsable de l'automatisation des tests fonctionnels et de la détection des anomalies. J'ai contribué à la mise en place de scripts de test, à l'amélioration des processus de validation et au suivi des bugs en collaboration avec les équipes de développement.
 									</p>
 								</div>
@@ -209,13 +216,13 @@
 								<div class="tl-bg" style="background-image: url(./images/sncf_background.jpeg)"></div>
 
 								<div class="tl-year">
-									<p class="f2 heading--sanSerif">Avril 2024 - Août 2024</p>
+									<p class="f2" data-i18n="experience.sncf.date">Avril 2024 - Août 2024</p>
 								</div>
 
 								<div class="tl-content">
 									<h1 class="f3 text--accent ttu">Centre d'ingénierie du Matériel de la SNCF</h1>
-									<h4>Stagiaire IA - 17 semaines</h4>
-									<p>
+									<h4 data-i18n="experience.sncf.job">Stagiaire IA - 17 semaines</h4>
+									<p data-i18n="experience.sncf.description">
 										Développement d'une solution de vision par ordinateur et de reconnaissance optique de caractères pour l'extraction d'informations techniques.
 									</p>
 								</div>
@@ -227,24 +234,23 @@
 								<div class="tl-bg" style="background-image: url(./images/airbus_background.jpg)"></div>
 							
 								<div class="tl-year">
-									<p class="f2 heading--sanSerif">Mars 2025 - Septembre 2025</p>
+									<p class="f2" data-i18n="experience.airbus.date">Mars 2025 - Septembre 2025</p>
 								</div>
 
 								<div class="tl-content">
 									<h1 class="f3 text--accent ttu">Airbus</h1>
-									<h4>Stagiaire Data Scientist - 27 semaines</h4>
-									<p>Conception d'un outil basé sur l'IA générative pour la génération de graphes de connaissances appliqués au diagnostic système. Utilisation de techniques de prompt engineering pour intéragir efficacement avec des grands modèles de langage (LLM).</p>
+									<h4 data-i18n="experience.airbus.job">Stagiaire Data Scientist - 27 semaines</h4>
+									<p data-i18n="experience.airbus.description">Conception d'un outil basé sur l'IA générative pour la génération de graphes de connaissances appliqués au diagnostic système. Utilisation de techniques de prompt engineering pour intéragir efficacement avec des grands modèles de langage (LLM).</p>
 								</div>
 
 						</div>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style3 fade-up">
+				<!-- Skills -->
+					<section id="skills" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Mes compétences</h2>
-							<p>Durant mes années de formation, j'ai pu acquérir de nombreuses compétences aussi bien informatiques et techniques qu'humaines.
-							   J'ai pu mettre en application ces compétences lors de nombreux projets que vous trouverez juste <a href="#two">ici</a>.
+							<h2 data-i18n="skills.title">Mes compétences</h2>
+							<p id="skills_description">Durant mes années de formation et mes expériences en entreprises, j'ai pu acquérir de nombreuses compétences aussi bien informatiques et techniques qu'humaines. J'ai pu mettre en application ces compétences lors de nombreux projets que vous trouverez juste <a href="#projects">ici</a>.
 							</p>
 							
 							<!-- Hard Skills -->
@@ -358,17 +364,17 @@
 						</div>
 					</section>
 
-				<!-- Two -->
-				<section id="two" class="wrapper style2 spotlights">
+				<!-- Projects -->
+				<section id="projects" class="wrapper style2 spotlights">
 					<div class="inner">
-						<h2>Mes projets</h2>
-						<p>Vous trouverez ci-dessous tous les projets que j'ai pu réaliser durant ma formation ou sur mon temps libre. N'hésitez pas à cliquer pour regarder chaque projet plus en détails !</p>
+						<h2 data-i18n="projects.title">Mes projets</h2>
+						<p data-i18n="projects.description">Vous trouverez ci-dessous tous les projets que j'ai pu réaliser durant ma formation ou sur mon temps libre. N'hésitez pas à cliquer pour regarder chaque projet plus en détails !</p>
 
 						<div class="project-filters">
-							<button class="filter-button" data-filter="all">Tous</button>
-							<button class="filter-button" data-filter="ia-category">IA/Data</button>
-							<button class="filter-button" data-filter="game-category">Jeux</button>
-							<button class="filter-button" data-filter="app-category">Applications</button>
+							<button class="filter-button" data-filter="all" data-i18n="projects.filters.all">Tous</button>
+							<button class="filter-button" data-filter="ai-category" data-i18n="projects.filters.ai">IA/Data</button>
+							<button class="filter-button" data-filter="game-category" data-i18n="projects.filters.game">Jeux</button>
+							<button class="filter-button" data-filter="app-category" data-i18n="projects.filters.app">Applications</button>
 						</div>
 					</div>
 
@@ -377,11 +383,11 @@
 						<a class="image"><img src="images/icon_rush_hour.png" alt="Rush Hour logo" data-position="center center" /></a>
 						<div class="content">
 							<div class="inner">
-								<h2>Rush Hour</h2>
-								<p>Petite application mobile basée sur le jeu de société Rush Hour codée en Java.</p>
+								<h2 data-i18n="projects.rushhour.title">Rush Hour</h2>
+								<p data-i18n="projects.rushhour.description">Petite application mobile basée sur le jeu de société Rush Hour codée en Java.</p>
 								<ul class="actions">
-									<li><a href="generic.html#0" class="button">En savoir plus</a></li>
-									<li><a href="https://github.com/Suna24/Rush_Hour" class="button">Code source</a></li>
+									<li><a href="generic.html#0" class="button" data-i18n="projects.know_more">En savoir plus</a></li>
+									<li><a href="https://github.com/Suna24/Rush_Hour" class="button" data-i18n="projects.source_code">Code source</a></li>
 								</ul>
 							</div>
 						</div>
@@ -459,7 +465,7 @@
 					</section>
 
 					<!-- Machine Learning Challenge -->
-					<section class="ia-category">
+					<section class="ai-category">
 						<a class="image"><img src="images/icon_emotion_recognition.png" alt="Emotion recognition logo" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -472,7 +478,7 @@
 					</section>
 
 					<!-- Neural Language Processing Tool -->
-					<section class="ia-category">
+					<section class="ai-category">
 						<a class="image"><img src="images/icon_nlp_toxicity_detection.png" alt="Emotion recognition logo" data-position="25% 25%" /></a>
 
 						<div class="content">
@@ -486,7 +492,7 @@
 					</section>
 
 					<!-- Research Project -->
-					<section class="ia-category">
+					<section class="ai-category">
 						<a class="image"><img src="images/bayesian_net.png" alt="Réseau Bayésien" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -498,7 +504,7 @@
 
 
 					<!-- Combinatory Optimization -->
-					<section class="ia-category">
+					<section class="ai-category">
 						<a class="image"><img src="images/icon_combinatory_optimization.png" alt="Optimisation Combinatoire" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -512,11 +518,11 @@
 					</section>
 				</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+				<!-- Contact -->
+					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Contact</h2>
-							<p>Si vous avez quelques questions, ou que vous voulez en savoir plus sur mon profil, n'hésitez pas à me contacter directement à l'aide de mon adresse mail ou sur LinkedIn.</p>
+							<h2 data-i18n="contact.title">Contact</h2>
+							<p data-i18n="contact.description">Si vous avez quelques questions, ou que vous voulez en savoir plus sur mon profil, n'hésitez pas à me contacter directement à l'aide de mon adresse mail ou sur LinkedIn.</p>
 								<section>
 									<ul class="contact">
 										<li>
@@ -524,7 +530,7 @@
 											<span>btarot@et.esiea.fr</span>
 										</li>
 										<li>
-											<h3>Téléphone</h3>
+											<h3 data-i18n="contact.phone">Téléphone</h3>
 											<span>+33 6 45 51 85 95</span>
 										</li>
 										<li>
@@ -560,6 +566,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/github-api.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+			<script src="assets/js/i18n.js"></script>
 			<script src="assets/js/categoryfilter.js"></script>
 	</body>
 </html>
