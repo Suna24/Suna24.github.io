@@ -358,10 +358,17 @@
 					<div class="inner">
 						<h2>Mes projets</h2>
 						<p>Vous trouverez ci-dessous tous les projets que j'ai pu réaliser durant ma formation ou sur mon temps libre. N'hésitez pas à cliquer pour regarder chaque projet plus en détails !</p>
+
+						<div class="project-filters">
+							<button class="filter-button" data-filter="all">Tous</button>
+							<button class="filter-button" data-filter="ia-category">IA/Data</button>
+							<button class="filter-button" data-filter="game-category">Jeux</button>
+							<button class="filter-button" data-filter="app-category">Applications</button>
+						</div>
 					</div>
 
 					<!-- Rush Hour -->
-					<section>
+					<section class="game-category">
 						<a class="image"><img src="images/icon_rush_hour.png" alt="Rush Hour logo" data-position="center center" /></a>
 						<div class="content">
 							<div class="inner">
@@ -376,7 +383,7 @@
 					</section>
 
 					<!-- CityDex -->
-					<section>
+					<section class="app-category">
 						<a class="image"><img src="images/icon_citydex.png" alt="Citydex logo" data-position="top center" /></a>
 						<div class="content">
 							<div class="inner">
@@ -391,7 +398,7 @@
 					</section>
 
 					<!-- Cocktails -->
-					<section>
+					<section class="app-category">
 						<a class="image"><img src="images/icon_cocktails.png" alt="Site web cocktail logo" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -406,7 +413,7 @@
 					</section>
 
 					<!-- Lethal League -->
-					<section>
+					<section class="game-category">
 						<a class="image"><img src="images/icon_lethal_league.jpg" alt="Lethal League logo" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -421,7 +428,7 @@
 					</section>
 
 					<!-- Octopus -->
-					<section>
+					<section class="app-category">
 						<a class="image"><img src="images/icon_octopus.png" alt="Octopus logo" data-position="25% 25%"/></a>
 						<div class="content">
 							<div class="inner">
@@ -434,7 +441,7 @@
 					</section>
 
 					<!-- Hearthstone BattleGround -->
-					<section>
+					<section class="game-category">
 						<a class="image"><img src="images/icon_hearthstone.png" alt="Emotion recognition logo" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -447,7 +454,7 @@
 					</section>
 
 					<!-- Machine Learning Challenge -->
-					<section>
+					<section class="ia-category">
 						<a class="image"><img src="images/icon_emotion_recognition.png" alt="Emotion recognition logo" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -460,7 +467,7 @@
 					</section>
 
 					<!-- Neural Language Processing Tool -->
-					<section>
+					<section class="ia-category">
 						<a class="image"><img src="images/icon_nlp_toxicity_detection.png" alt="Emotion recognition logo" data-position="25% 25%" /></a>
 
 						<div class="content">
@@ -474,7 +481,7 @@
 					</section>
 
 					<!-- Research Project -->
-					<section>
+					<section class="ia-category">
 						<a class="image"><img src="images/bayesian_net.png" alt="Réseau Bayésien" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -486,7 +493,7 @@
 
 
 					<!-- Combinatory Optimization -->
-					<section>
+					<section class="ia-category">
 						<a class="image"><img src="images/icon_combinatory_optimization.png" alt="Optimisation Combinatoire" data-position="25% 25%" /></a>
 						<div class="content">
 							<div class="inner">
@@ -548,5 +555,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/github-api.js"></script>
+			<script src="assets/js/categoryfilter.js"></script>
 	</body>
 </html>
