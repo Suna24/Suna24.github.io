@@ -28,8 +28,10 @@ async function fetchGithubStats() {
   )[0].style.backgroundImage = `url(${data.avatar_url})`;
   document.getElementsByClassName("repository-number")[0].innerText =
     data.public_repos;
-  document.getElementsByClassName("commits-number")[0].innerText =
-    totalCommits + " commits";
+  if (totalCommits != NaN) {
+    document.getElementsByClassName("commits-number")[0].innerText =
+      totalCommits + " commits";
+  }
   document.getElementsByClassName("star-number")[0].innerText = totalStars;
 }
 
