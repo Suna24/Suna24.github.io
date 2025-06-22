@@ -282,6 +282,37 @@ $(function () {
                   title: "Combinatorial Optimization",
                   description:
                     "Creation of algorithms for solving a complex NP problem: Finding a maximum clique in a graph.",
+                  full_description:
+                    'As part of the "Numerical in Python" course I took during my 4th year at ESIEA, I had the opportunity to work on solving a complex NP problem. The goal of this project is similar to solving the maximum clique problem within a graph. The maximum clique problem is a combinatorial optimization problem that involves finding the largest subset of vertices in a complete graph such that every vertex in the subset is adjacent to every other vertex. In other words, it consists of finding the largest set of vertices in which each pair of vertices is connected by an edge.',
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "The project was carried out in Python using the PyCharm software. No additional libraries for solving this problem were used; we had to implement our own solutions by exploring different approaches.",
+                  algorithms: {
+                    title: "Considered Approaches",
+                    glouton: {
+                      title: "Greedy Algorithm",
+                      description:
+                        'The greedy algorithm is a simple algorithm used to find a clique in a graph. It is defined as an algorithm that makes locally optimal decisions at each step with the aim of obtaining a globally optimal solution to the problem. It starts by selecting the most "powerful" vertex (that is, the one whose weight multiplied by its number of connections is the highest). This vertex is added to the clique. Then, the algorithm searches for another powerful vertex that is connected to all vertices already in the clique. If it finds one, it adds it to the clique. This process repeats until there are no more compatible vertices to add.<br><br>The greedy algorithm is generally fast in execution but tends to be limited to a local optimum which is always predetermined by its initial choice. Therefore, there are many cases where it will not reach the optimal result due to the inability to follow another optimal path.',
+                    },
+                    bron: {
+                      title: "Bron-Kerbosch Algorithm",
+                      description:
+                        "The Bron-Kerbosch algorithm is an enumeration algorithm that, by listing all the cliques in the instance, allows retrieving the maximum existing clique. Although it is guaranteed to find the global optimal solution each time, this algorithm is very costly in terms of computation time and memory since it lists all possible cliques in the graph. Therefore, it is not well-suited for large graphs.",
+                    },
+                    genetic: {
+                      title: "Genetic Algorithm",
+                      description:
+                        "The genetic algorithm is a metaheuristic evolutionary algorithm characterized by its ability to explore a large and diverse population based on the natural selection process observed in nature. The best solutions from one iteration produce offspring that improve over time. Implementing the genetic algorithm requires the use of randomness in the crossover and mutation processes, which greatly increases diversity and variation in possibilities and implementations of this algorithm. The algorithm requires as parameters the population size (the number of solutions to compute), the number of individuals selected for reproduction, as well as the crossover and mutation probabilities, which introduce randomness into the current and subsequent generations. To manage the reproduction crossover, we implemented a multipoint crossover (randomly at 2 and 4 points).",
+                    },
+                    ant: {
+                      title: "Ant Colony Optimization",
+                      description:
+                        'We then focused on a second metaheuristic and chose to implement ACO (Ant Colony Optimization). This algorithm uses the natural behavior of ants and the pheromones they deposit to find a feasible solution. In the context of cliques, the algorithm first generates several candidate solutions (cliques). The "ants" build these solutions by following probabilities influenced by pheromone trails (which represent good decisions from previous populations). At each iteration, the best cliques influence the next population through pheromone updates. This process continues until the time limit is reached.',
+                    },
+                  },
+                  results_title: "Results",
+                  results_description:
+                    "All the results obtained are presented in the annex report available on the project's GitHub. We identified a recurring problem with our algorithms, namely that they do not escape their local optimum enough. Indeed, our solutions remain stuck in similar solutions despite the evolution and diversity they impose. Another optimization point would be to modify the code implementation and data usage. We performed significant optimization work that could be further improved by replacing the current structure with adjacency matrices in particular and by compressing the graphs. Our most powerful algorithm currently is the genetic algorithm, which iterates extensively given its optimization and finds fairly convergent results.",
                 },
               },
               contact: {
@@ -553,6 +584,37 @@ $(function () {
                   title: "Optimisation Combinatoire",
                   description:
                     "Création d'algorithmes pour la résolution d'un problème NP complexe : Recherche d'une clique maximum dans un graphe.",
+                  full_description:
+                    " Dans le cadre du cours \"Numerical in Python\" suivi lors de ma 4ème année à l'ESIEA, j'ai eu l'opportunité de travailler sur la résolution d'un problème NP complexe. Le but de ce projet s'apparente à la résolution du problème de la clique maximum au sein d'un graphe. Le problème de la clique maximum est un problème d'optimisation combinatoire qui consiste à trouver le plus grand sous-ensemble de sommets d'un graphe complet tel que tous les sommets du sous-ensemble sont adjacents entre eux. En d'autres termes, il s'agit de trouver le plus grand ensemble de sommets dans lequel chaque paire de sommets est connectée par une arête.",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "Le projet a été réalisé en Python sur le logiciel PyCharm. Aucune librairie additionnelle permettant de résoudre ce problème n'a été utilisée, nous avons dû implémenter nos propres solutions en explorant différentes approches.",
+                  algorithms: {
+                    title: "Approches considérées",
+                    glouton: {
+                      title: "Algorithme glouton",
+                      description:
+                        "L'algorithme glouton est un algorithme simple utilisé pour trouver une clique dans un graphe. Il est défini comme un algorithme qui prend des décisions locales optimales chaque étape dans le but d'obtenir une solution globale optimale au problème. Il commence par sélectionner le sommet le plus \"puissant\" (c'est à dire celui dont le produit du poids par son nombre de relations est le plus élevé). ce sommet est ajouté à la clique. Ensuite, l'algorithme cherche un autre sommet puissant qui est connecté à tous les sommets déjà présents dans la clique. S'il en trouve un, il l'ajoute à la clique. Ce processus se répète jusqu'à ce qu'il n'y ait plus de sommet compatible à ajouter.<br><br> L'algorithme glouton est en général rapide dans son exécution mais va se limiter à un optimum local qui est toujours prédéfini par son choix premier, il y a donc de nombreux cas où celui-ci n'atteindra pas le résultat optimal par manque de possibilité de suivre un autre chemin optimal.",
+                    },
+                    bron: {
+                      title: "Algorithme de Bron-Kerbosch",
+                      description:
+                        "L'algorithme de Bron-Kerbosch est un algorithme d'énumération qui permet, en listant l'ensemble des cliques de l'instance d'en récupérer la maximale existante. Bien qu'étant sûr de trouver la solution optimale globale à chaque fois, cet algorithme est très coûteux en temps de calcul et en mémoire puisqu'il liste l'intégralité des cliques possibles dans le graphe. Il est donc peu adapté pour des graphes de grande taille.",
+                    },
+                    genetic: {
+                      title: "Algorithme génétique",
+                      description:
+                        "L'algorithme génétique est un algorithme d'évolution métaheuristique qui se caractérise par sa capacité à explorer une vaste et diverse population en se basant sur le processus de sélection naturelle observé dans la nature. Les meilleures solutions d'une itération vont produire des enfants qui seront meilleurs au fur et à mesure du temps. L'implémentation de l'algorithme génétique nécessite l'utilisation d'aléatoire dans le processus de croisement et de mutation ce qui va grandement apporter de la diversité et faire varier les possibilités et les implémentations de cet algorithme. En paramètre, l'algorithme nécessite la taille de la population à générer (le nombre de solutions à calculer), le nombre d'individus sélectionnés pour la reproduction ainsi que la probabilité de croisement et de mutation qui permettent de rendre plus aléatoire la génération actuelle et ses suivantes. Afin de gérer notre croisement de reproduction nous avons implémenté un croisement multipoints (aléatoire en 2 et 4 points)",
+                    },
+                    ant: {
+                      title: "Algorithme de colonies de fourmis",
+                      description:
+                        "Nous nous sommes ensuite penchés sur une seconde méta-heuristique et avons choisi d'implémenter l'ACO (Ant Colony Optimization). Cet algorithme utilise le comportement naturel des fourmis et des phéromones qu'elles déposent afin de trouver une solution envisageable. Dans le contexte des cliques, l'algorithme génère d'abord plusieurs solutions candidates (cliques). Les \"fourmis\" construisent ces solutions en suivant des probabilités influencées par des traces de phéromones (qui représentent les bonnes décisions des populations précédentes). À chaque itération, les meilleures cliques influencent la population suivante, grâce à une mise à jour des phéromones. Ce processus continue jusqu'à ce que la limite de temps soit atteinte.",
+                    },
+                  },
+                  results_title: "Résultats",
+                  results_description:
+                    "Tous les résultats obtenus sont présentés dans le rapport annexe disponible sur le GitHub du projet. Nous avons pu identifier un problème récurrent à nos algorithmes, à savoir que ceux-ci ne sortent pas assez de leur optimum local. En effet nos solutions restent bloquées dans des solutions similaires malgré l'évolution et la diversité qu'ils imposent. Un autre point d'optimisation serait aussi de modifier l'implémentation du code et de l'utilisation des données, nous avons effectué un énorme travail d'optimisation qui pourrait être maximisé en remplaçant la structure actuelle par des matrices d'adjacence notamment et en compressant les graphes. Notre algorithme le plus puissant actuellement est l'algorithme génétique qui itère énormément au vu de son optimisation et qui trouve des résultats plutôt convergents.",
                 },
               },
               contact: {

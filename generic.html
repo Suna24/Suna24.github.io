@@ -341,49 +341,45 @@
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.full_description">
 										   Dans le cadre du cours "Numerical in Python" suivi lors de ma 4ème année à l'ESIEA, j'ai eu l'opportunité de travailler sur la résolution d'un problème NP complexe. Le but de ce projet s'apparente à la résolution du problème de la clique maximum au sein d'un graphe. Le problème de la clique maximum est un problème d'optimisation combinatoire qui consiste à trouver le plus grand sous-ensemble de sommets d'un graphe complet tel que tous les sommets du sous-ensemble sont adjacents entre eux. En d'autres termes, il s'agit de trouver le plus grand ensemble de sommets dans lequel chaque paire de sommets est connectée par une arête.
 										</p>
 									
-										<h3>Aspects techniques</h3>
+										<h3 data-i18n="projects.optimization.technical_title">Aspects techniques</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.technical_description">
 											Le projet a été réalisé en Python sur le logiciel PyCharm. Aucune librairie additionnelle permettant de résoudre ce problème n'a été utilisée, nous avons dû implémenter nos propres solutions en explorant différentes approches.
 										</p>
 
-										<h3>Approches considérées</h3>
+										<h3 data-i18n="projects.optimization.algorithms.title">Approches considérées</h3>
 
-										<h4>Algorithme Glouton</h4>
+										<h4 data-i18n="projects.optimization.algorithms.glouton.title">Algorithme glouton</h4>
 
-										<p>
-											L'algorithme glouton est un algorithme simple utilisé pour trouver une clique dans un graphe. Il est défini comme un algorithme qui prend des décisions locales optimales chaque étape dans le but d'obtenir une solution globale optimale au problème. Il commence par sélectionner le sommet le plus "puissant" (c'est à dire celui dont le produit du poids par son nombre de relations est le plus élevé). ce sommet est ajouté à la clique. Ensuite, l'algorithme cherche un autre sommet puissant qui est connecté à tous les sommets déjà présents dans la clique. S'il en trouve un, il l'ajoute à la clique. Ce processus se répète jusqu'à ce qu'il n'y ait plus de sommet compatible à ajouter.
+										<p data-i18n="[html]projects.optimization.algorithms.glouton.description">
+											L'algorithme glouton est un algorithme simple utilisé pour trouver une clique dans un graphe. Il est défini comme un algorithme qui prend des décisions locales optimales chaque étape dans le but d'obtenir une solution globale optimale au problème. Il commence par sélectionner le sommet le plus "puissant" (c'est à dire celui dont le produit du poids par son nombre de relations est le plus élevé). ce sommet est ajouté à la clique. Ensuite, l'algorithme cherche un autre sommet puissant qui est connecté à tous les sommets déjà présents dans la clique. S'il en trouve un, il l'ajoute à la clique. Ce processus se répète jusqu'à ce qu'il n'y ait plus de sommet compatible à ajouter.<br><br>L'algorithme glouton est en général rapide dans son exécution mais va se limiter à un optimum local qui est toujours prédéfini par son choix premier, il y a donc de nombreux cas où celui-ci n'atteindra pas le résultat optimal par manque de possibilité de suivre un autre chemin optimal.
 										</p>
 
-										<p>
-											L'algorithme glouton est en général rapide dans son exécution mais va se limiter à un optimum local qui est toujours prédéfini par son choix premier, il y a donc de nombreux cas où celui-ci n'atteindra pas le résultat optimal par manque de possibilité de suivre un autre chemin optimal.
-										</p>
+										<h4 data-i18n="projects.optimization.algorithms.bron.title">Algorithme de Bron-Kerbosch</h4>
 
-										<h4>Algorithme de Bron-Kerbosch</h4>
-
-										<p>
+										<p data-i18n="projects.optimization.algorithms.bron.description">
 											L'algorithme de Bron-Kerbosch est un algorithme d'énumération qui permet, en listant l'ensemble des cliques de l'instance d'en récupérer la maximale existante. Bien qu'étant sûr de trouver la solution optimale globale à chaque fois, cet algorithme est très coûteux en temps de calcul et en mémoire puisqu'il liste l'intégralité des cliques possibles dans le graphe. Il est donc peu adapté pour des graphes de grande taille.
 										</p>
 
-										<h4>Algorithme génétique</h4>
+										<h4 data-i18n="projects.optimization.algorithms.genetic.title">Algorithme génétique</h4>
 
-										<p>
+										<p data-i18n="projects.optimization.algorithms.genetic.description">
 											L'algorithme génétique est un algorithme d'évolution métaheuristique qui se caractérise par sa capacité à explorer une vaste et diverse population en se basant sur le processus de sélection naturelle observé dans la nature. Les meilleures solutions d'une itération vont produire des enfants qui seront meilleurs au fur et à mesure du temps. L'implémentation de l'algorithme génétique nécessite l'utilisation d'aléatoire dans le processus de croisement et de mutation ce qui va grandement apporter de la diversité et faire varier les possibilités et les implémentations de cet algorithme. En paramètre, l'algorithme nécessite la taille de la population à générer (le nombre de solutions à calculer), le nombre d'individus sélectionnés pour la reproduction ainsi que la probabilité de croisement et de mutation qui permettent de rendre plus aléatoire la génération actuelle et ses suivantes. Afin de gérer notre croisement de reproduction nous avons implémenté un croisement multipoints (aléatoire en 2 et 4 points)
 										</p>
 
-										<h4>Algorithme de colonies de fourmis</h4>
+										<h4 data-i18n="projects.optimization.algorithms.ant.title">Algorithme de colonies de fourmis</h4>
 										
-										<p>
+										<p data-i18n="projects.optimization.algorithms.ant.description">
 											Nous nous sommes ensuite penchés sur une seconde méta-heuristique et avons choisi d'implémenter l'ACO (Ant Colony Optimization). Cet algorithme utilise le comportement naturel des fourmis et des phéromones qu'elles déposent afin de trouver une solution envisageable. Dans le contexte des cliques, l'algorithme génère d'abord plusieurs solutions candidates (cliques). Les "fourmis" construisent ces solutions en suivant des probabilités influencées par des traces de phéromones (qui représentent les bonnes décisions des populations précédentes). À chaque itération, les meilleures cliques influencent la population suivante, grâce à une mise à jour des phéromones. Ce processus continue jusqu'à ce que la limite de temps soit atteinte.
 										</p>
 										
-										<h3>Résultats</h3>
+										<h3 data-i18n="projects.optimization.results_title">Résultats</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.results_description">
 											Tous les résultats obtenus sont présentés dans le rapport annexe disponible sur le GitHub du projet. Nous avons pu identifier un problème récurrent à nos algorithmes, à savoir que ceux-ci ne sortent pas assez de leur optimum local. En effet nos solutions restent bloquées dans des solutions similaires malgré l'évolution et la diversité qu'ils imposent. Un autre point d'optimisation serait aussi de modifier l'implémentation du code et de l'utilisation des données, nous avons effectué un énorme travail d'optimisation qui pourrait être maximisé en remplaçant la structure actuelle par des matrices d'adjacence notamment et en compressant les graphes. Notre algorithme le plus puissant actuellement est l'algorithme génétique qui itère énormément au vu de son optimisation et qui trouve des résultats plutôt convergents.
 										</p>
 									</div>
