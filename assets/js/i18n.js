@@ -244,6 +244,18 @@ $(function () {
                   title: "Octopus",
                   description:
                     "Scientific and Technical Project: Development of a white station with Javascript, Bash, and Ansible.",
+                  full_description:
+                    "As part of my 4th-year scientific and technical project at ESIEA, we had to take over an existing project of a white station. A white station is a device specially designed to analyze and examine the contents of USB drives securely and without alteration. The station then takes care of removing any malicious files from the drive. The project is entirely open-source. This white station was eventually deployed at the <b>General Secretariat for the Administration of the Ministry of the Interior (SGAMI)</b> in Rennes by one of my teammates during his 4th-year internship.",
+                  how_it_works: "How it works",
+                  how_it_works_description:
+                    "The operation of the station is as shown in the image below. There are three different machines here: the Octopus station, where the user plugs in their USB drive, which features a web interface; the controller, a machine that updates the station (and potentially all networked stations afterwards); and finally, the log server, which stores the station's data once the USB drive analysis is complete. The Octopus white station can accommodate up to four USB drives simultaneously.",
+                  objectives_title: "Objectives of the project",
+                  objectives_description:
+                    "We established 3 major objectives to achieve for the first semester: <ul><li>Redesign of the graphical interface</li><li>Improvement of the deployment</li><li>Addition of new antivirus programs selected by the controller</li></ul>",
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "The original white station was primarily developed in Bash; deployment is handled with Ansible, and the station's web interface was built using NodeJS and Vue.js. After taking over the project, we decided to rebuild the graphical interface with React and redo the backend due to a deprecated library that made the work very complicated.",
+                  poster_title: "Poster of the project",
                 },
                 hearthstone: {
                   title: "Hearthstone BattleGround",
@@ -501,6 +513,18 @@ $(function () {
                   title: "Octopus",
                   description:
                     "Projet Scientifique et Technique : Développement d'une station blanche avec Javascript, Bash et Ansible.",
+                  full_description:
+                    "Dans le cadre de mon projet scientifique et technique de 4ème année à l'ESIEA, nous devions reprendre un projet déjà existant d'une station blanche. Une station blanche est un dispositif specialement conçu pour analyser et examiner le contenu de clés USB de manière sécurisée et sans altération. La station se charge ensuite de supprimer les éventuels fichiers malveillants de la clé. Le projet est entièrement open-source. Cette station blanche a fini par être déployée au <b>Secrétariat Général pour l'Administration du Ministère de l'Intérieur (SGAMI)</b> de Rennes par un de mes camarades lors de son stage de 4ème année.",
+                  how_it_works: "Fonctionnement",
+                  how_it_works_description:
+                    "Le fonctionnement de la station se fait selon l'image ci-dessous. On a ici 3 machines différentes : la station Octopus sur laquelle l'utilisateur va venir brancher sa clé USB qui est dotée d'une interface web; le contrôleur qui est une machine qui va venir mettre à jour la station (et éventuellement toutes les stations en réseau par la suite) et enfin le serveur de logs qui va stocker les données de la station une fois l'analyse de la clé USB terminée. La station blanche Octopus est capable d'accueillir jusqu'à 4 clés USB en même temps.",
+                  objectives_title: "Objectifs du projet",
+                  objectives_description:
+                    "Nous avons établi 3 objectifs majeurs à réaliser pour le premier semestre :<ul><li>Refonte de l'interface graphique</li><li>Amélioration du déploiement</li><li>Ajout de nouveaux antivirus sélectionné par le contrôleur</li></ul>",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "La station blanche originelle a été développée majoritairement en Bash; le déploiement est quant à lui fait avec Ansible et l'interface web de la station a été réalisée avec NodeJS et Vue.js. Après avoir pris en main le projet, nous avons décidé de refaire l'interface graphique avec React et de refaire le backend à cause d'une librairie dépréciée qui rendait le travail vraiment compliqué.",
+                  poster_title: "Affiche projet",
                 },
                 hearthstone: {
                   title: "Hearthstone BattleGround",
