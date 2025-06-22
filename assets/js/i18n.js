@@ -206,6 +206,12 @@ $(function () {
                   title: "Lethal League",
                   description:
                     "Scientific and Technical Project: Projectile battle game developed in Python with Pygame.",
+                  full_description:
+                    'In the context of a scientific and technical project, we had to develop an arcade-type game in Python. We decided to recreate the game of the same name: <a href="https://store.steampowered.com/app/553310/Lethal_League_Blaze/?l=french">Lethal League</a>. It is a ball game where the goal is to hit the ball with your bat to make it accelerate and hit your opponent. The game allows you to choose from 6 different characters, each with its own characteristics.',
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "The game was developed using Python and Pycharm integrated development environment. We used the Pygame library to create the game, which allowed us to manage graphics, sounds, and user interactions easily.",
+                  photos_title: "Some photos of the game",
                 },
                 octopus: {
                   title: "Octopus",
@@ -430,6 +436,12 @@ $(function () {
                   title: "Lethal League",
                   description:
                     "Projet Scientifique et Technique : Jeu de combat de projectiles développé en Python avec Pygame.",
+                  full_description:
+                    "Dans le cadre d'un projet scientifique et technique, nous devions développer un jeu type arcade en Python. Nous avons donc décidé de reprendre le jeu du même nom : <a href=\"https://store.steampowered.com/app/553310/Lethal_League_Blaze/?l=french\">Lethal League</a>. Il s'agit d'un jeu de balle où le but est de frapper la balle avec votre batte pour la faire accélérer et toucher votre adversaire. Le jeu permet de sélectionner parmi 6 personnages différents, chacun ayant des caractéristiques qui lui sont propres.",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "Le jeu a été développé à l'aide de Python et de l'éditeur de code PyCharm. Nous avons utilisé la librairie Pygame pour créer le jeu, ce qui nous a permis de gérer facilement les graphismes, les sons et les interactions avec l'utilisateur.",
+                  photos_title: "Quelques photos du jeu",
                 },
                 octopus: {
                   title: "Octopus",
