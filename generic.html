@@ -18,10 +18,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="title">Mes projets</a>
+				<a class="title" data-i18n="projects.title">Mes projets</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Accueil</a></li>
+						<li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -40,23 +40,22 @@
 	  						<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">Rush Hour</h1>
+										<h1 class="major" data-i18n="projects.rushhour.title">Rush Hour</h1>
 										<span class="image fit"><img src="images/icon_rush_hour.png" alt="" /></span>
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.rushhour.full_description">
 											Le but de ce projet était de réaliser une application Android sous la forme d'un petit jeu. J'ai donc choisi de m'inspirer du jeu de société Rush Hour pour réaliser ce dernier. Il s'agit d'un jeu où le joueur doit faire sortir la voiture blanche du plateau. Seulement d'autres voitures bloquent le passage. Le joueur doit alors faire bouger les autres voitures pour libérer la blanche du plateau en appuyant sur l'avant du véhicule s'il souhaite la bouger vers l'avant et inversement s'il veut la faire se mouvoir vers l'arrière. Le jeu dispose d'un tableau des scores avec un système d'étoiles, de 40 niveaux uniques, ainsi que de musiques !
 										</p>
 
-										<h3>Aspects Techniques</h3>
+										<h3 data-i18n="projects.rushhour.technical_title">Aspects Techniques</h3>
 
-										<p>
-											Pour réaliser ce projet, j'ai utilisé le langage Java et l'environnement de développement Android Studio. J'ai également travaillé avec Firebase pour la gestion des scores et l'enregistrement du nombre d'étoiles. Le jeu propose également une
-											connection à Google la première fois que vous lancez le jeu.
+										<p data-i18n="projects.rushhour.technical_description">
+											Pour réaliser ce projet, j'ai utilisé le langage Java et l'environnement de développement Android Studio. J'ai également travaillé avec Firebase pour la gestion des scores et l'enregistrement du nombre d'étoiles. Le jeu propose également une connection à Google la première fois que vous lancez le jeu.
 										</p>
 
-										<h3>Quelques photos de l'application</h3>
+										<h3 data-i18n="projects.rushhour.photos_title">Quelques photos de l'application</h3>
 
 										<section id="photosRushHour">
 											<img src="./images/rushhour_accueil.jpg" alt="Photo de la page d'accueil de RushHour"/>
@@ -66,46 +65,47 @@
 											<img src="./images/rushhour_scores.jpg" alt="Photo de la page des scores de RushHour"/>
 										</section>
 
-										<h3>Où trouver notre projet ?</h3>
+										<h3 data-i18n="projects.rushhour.where_to_find_title">Où trouver notre projet ?</h3>
 
-										<p>
+										<p data-i18n="[html]projects.rushhour.where_to_find_description">
 											Si vous voulez voir le code source de ce jeu ou bien même le télécharger pour pouvoir y jouer, vous trouver le repository Github via <a href="https://github.com/Suna24/Rush_Hour">ce lien</a>.
 										</p>
 
-										<h3>Maintenance & Veille Technologique</h3>
+										<h3 data-i18n="projects.rushhour.maintenance_title">Maintenance & Veille Technologique</h3>
+
 										<h4>Description</h4>
 
-										<p>
+										<p data-i18n="projects.rushhour.maintenance_description">
 											Durant ma formation, j'ai eu l'occasion de faire une maintenance sur cette application afin de l'améliorer. Je me suis donc attaché à trouver une fonctionnalité qui pourrait rendre mon application plus attirante pour les utilisateurs. Il y avait déjà un système de scores dans mon application, si un joueur réussissais un niveau dans un temps imparti il récupérait un certains nombre d'étoiles qui était ensuite sauvegardé sur Firebase. Néanmoins le joueur n'avait pas de limite quant à l'accumulation des étoiles, c'est à dire qu'il pouvait enchainer le même niveau et incrémenter son nombre d'étoiles autant qu'il le souhaitait. J'ai donc décidé d'y remédier en sauvegardant le nombre d'étoiles pour chaque niveau et afficher ensuite sous les boutons de niveau le nombre d'étoile que possède le joueur. J'ai également décidé de nettoyer et de refactoriser un peu de code pour le rendre plus lisible.
 										</p>
 
-										<h4>Veille Technologique</h4>
+										<h4 data-i18n="projects.rushhour.technological_watch_title">Veille Technologique</h4>
 
-										<p>
+										<p data-i18n="projects.rushhour.technological_watch_description">
 											Afin d'implémenter cette nouvelle fonctionnalité et sauvegarder les scores des utilisateurs, j'ai du me décider entre deux moyens. Le premier était de sauvegarder les scores des utilisateurs directement sur leur stockage local interne, le second était de stocker et d'heberger ces scores sur Firebase.
 										</p>
 
 										<ul class="VeilleTechno">
-											<li>Stockage local</li>
+											<li data-i18n="projects.rushhour.local_storage.title">Stockage local</li>
 												
-											<p>
+											<p data-i18n="projects.rushhour.local_storage.description">
 												Le stockage en local des informations présente plusieurs avantages. En effet, où que l'utilisateur se trouve et même s'il ne dispose pas de connexion internet, ses scores sont sauvegardés sur son appareil. De plus stocker des données sur l'appareil de l'utilisateur est entièrement gratuit et nécessite seulement une permission de la part de l'utilisateur. Enfin, l'accès aux données est rapide et la sécurité renforcée. Néanmoins, stocker ces données en interne prend de la place sur l'appareil de l'utilisateur même si ici, le fichier n'en prend pas beaucoup. Le second inconvénient de ce moyen et qu'on ne peut pas intéragir avec les scores des autres joueurs, ce qui peut poser problème si on souhaite faire un classement des meilleurs scores par exemple.
 											</p>
 
-											<li>Firebase</li>
+											<li data-i18n="projects.rushhour.firbase.title">Firebase</li>
 
-											<p>
+											<p data-i18n="projects.rushhour.firbase.description">
 												En revanche, le stockage des données grâce à des services d'hébergement comme Firebase nécessite une connexion à internet pour fonctionner. Cependant, stocker ses données sur Firebase permet d'accéder en temps réel aux scores de tous les joueurs et par conséquent d'établir un classement des meilleurs scores ou des meilleurs temps et ce parmi tous les joueurs jouant à Rush Hour.
 											</p>
 										</ul>
 
-										<p>
+										<p data-i18n="projects.rushhour.comparative_analysis">
 											Les deux manières de stocker les scores des joueurs ont chacunes leurs atouts et leurs défauts, néanmoins, étant donné que j'ai implémenté une fonctionnalité établissant un classement des meilleurs joueurs avec Firebase, j'ai préféré rester avec ce même moyen de sauvegarde des données, d'autant que je sais comment utiliser l'API proposée par Firebase pour Android.
 										</p>
 								
 									</div>
 
-									<div id="git"><button><a href="https://github.com/Suna24/Rush_Hour">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/Suna24/Rush_Hour" data-i18n="projects.source_code">Code Source</a></button></div>
 
 								</section>
 							</div>
@@ -118,21 +118,21 @@
 										
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.citydex.full_description">
 											Dans le cadre d'un projet de semestre, nous avons du créer une application mobile android de type pokédex répertoriant des photos prises par l'utilisateur regroupées autour d'une thématique : les panneaux d'agglomérations. Il est important de noter que cette application traite seulement des panneaux d'agglomération sur le territoire français regroupant donc la métropole française mais aussi les territoires d'outre mer (Mayotte, La Réunion, Saint Pierre et Miquelon…). L'application a pour nom CityDex. L'utilisateur collectionne donc des panneaux dans son CityDex, l'objectif étant d'en avoir le plus possible.
 										</p>
 
-										<p>
+										<p data-i18n="projects.citydex.details_description">
 											Cette application permet aux utilisateurs de répertorier les différentes villes où ils sont allés, et d'avoir pour preuve les panneaux d'agglomérations. Cette application a aussi pour but de fournir diverses informations aux utilisateurs sur les villes dont ils ont pris le panneau en photo.
 										</p>
 									
-										<h3>Aspects Techniques</h3>
+										<h3 data-i18n="projects.citydex.technical_title">Aspects Techniques</h3>
 										
-										<p>
+										<p data-i18n="projects.citydex.technical_description">
 											Nous avons du pour ce projet utiliser le langage Java et le logiciel Android Studio comme environnement de développement. Pour reconnaître un panneau dans une image, nous avons entraîné un modèle TensorFlow avec plus de 250 images de panneaux que nous avons labelisées. Nous avons également utilisé la librairie Tesseract pour la reconnaissance de caractère et ainsi reconnaître le nom de la ville sur le panneau.
 										</p>
 
-										<h3>Quelques photos de l'application</h3>
+										<h3 data-i18n="projects.citydex.photos_title">Quelques photos de l'application</h3>
 
 										<section id="photosCityDex">
 											<img src="./images/citydex_page_de_chargement.jpg" alt="Photo de la page de chargement de CityDex"/>
@@ -142,47 +142,47 @@
 											<img src="./images/citydex_page_ville.png" alt="Photo de la page de description d'une ville"/>
 										</section>
 
-										<h3>Où trouver notre projet ?</h3>
+										<h3 data-i18n="projects.citydex.where_to_find_title">Où trouver notre projet ?</h3>
 
-										<p>
+										<p data-i18n="[html]projects.citydex.where_to_find_description">
 											Vous pouvez avoir accès directement au code source de notre application via <a href="https://github.com/TLBail/CityDex">ce lien</a> mais également télécharger l'application directement sur le PlayStore en écrivant CityDex dans la barre de recherche !
 										</p>
 
-										<h3>Maintenance & Veille Technologique</h3>
+										<h3 data-i18n="projects.citydex.maintenance_title">Maintenance & Veille Technologique</h3>
+
 										<h4>Description</h4>
 
-										<p>
-											Durant ma formation, j'ai du mettre cette application en maintenance afin de corriger quelques bugs ou améliorer certaines interfaces utilisateurs. J'ai notamment essayé à ce que les interfaces soient adaptables au plus grand nombre d'appareils et d'écrans possibles. J'ai également décidé d'ajouter une nouvelle fonctionnalité à l'application : un système de notification. L'utilisateur est donc prévenu au lancement de l'application s'il se trouve dans une ville dont il ne possède pas le panneau grâce à la localisation qui va récupérer les coordonnées de l'utilisateur, en déduire la ville où il se trouve et envoyer un notification. J'ai également fais en sorte que le mode nuit n'impacte pas sur l'application étant donné qu'il causait des problèmes d'interfaces et j'ai participé
-											à un refactoring de l'application.
+										<p data-i18n="projects.citydex.maintenance_description">
+											Durant ma formation, j'ai du mettre cette application en maintenance afin de corriger quelques bugs ou améliorer certaines interfaces utilisateurs. J'ai notamment essayé à ce que les interfaces soient adaptables au plus grand nombre d'appareils et d'écrans possibles. J'ai également décidé d'ajouter une nouvelle fonctionnalité à l'application : un système de notification. L'utilisateur est donc prévenu au lancement de l'application s'il se trouve dans une ville dont il ne possède pas le panneau grâce à la localisation qui va récupérer les coordonnées de l'utilisateur, en déduire la ville où il se trouve et envoyer un notification. J'ai également fais en sorte que le mode nuit n'impacte pas sur l'application étant donné qu'il causait des problèmes d'interfaces et j'ai participé à un refactoring de l'application.
 										</p>
 
-										<h4>Veille Technologique</h4>
+										<h4 data-i18n="projects.citydex.technological_watch_title">Veille Technologique</h4>
 											
-										<p>
+										<p data-i18n="[html]projects.citydex.technological_watch_description">
 											Afin d'implémenter cette nouvelle fonctionnalité, je disposais de deux choix, soit j'utilisais le système de notifications grâce aux classes déjà implémentées dans le <a href="https://developer.android.com/training/notify-user/build-notification">SDK Android</a> ou bien une librairie à importer dans l'application comme celle de <a href="https://camposha.info/android-examples/android-notification-libraries/">Camposha.info</a> par exemple. J'ai donc procédé à une veille technologique sur chacune de ces technologies afin de déterminer laquelle conviendrai le mieux pour réaliser cette nouvelle fonctionnalité.
 										</p>
 
 										<ul class="VeilleTechno">
-											<li>Notification du SDK Android</li>
+											<li data-i18n="projects.citydex.android_sdk.title">Notification du SDK Android</li>
 
-											<p>
+											<p data-i18n="projects.citydex.android_sdk.description">
 												Le système de notification est "pré-installé" dans le SDK Android, il n'y a donc pas besoin d'importer quoi que ce soit dans l'application. De plus, le SDK Android possède une très bonne documentation et il est plutôt simple de s'y retrouver parmi toutes les fonctions et attributs. De nombreux tutoriels et de projets sont disponibles, donc si j'ai un quelconque problème, je n'aurais pas de mal à trouver une solution efficace rapidement.
 											</p>
 
-											<li>Librairie Camposha</li>
+											<li data-i18n="projects.citydex.camposha.title">Librairie Camposha</li>
 
-											<p>
+											<p data-i18n="projects.citydex.camposha.description">
 												La librarie Camposha semble également adaptée pour implémenter le système de notification. Néanmoins, il s'agit d'une librairie, par conséquent il faut l'importer dans l'application. En revanche, la librarie propose une version beaucoup plus simplifiée pour la création et la gestion de notifications ce qui la rend plus simple à comprendre et à utiliser.
 											</p>
 										</ul>
 
-										<p>
+										<p data-i18n="projects.citydex.comparative_analysis">
 											Pour conclure, les deux technologies présentent leurs avantages et leur inconvénients. Importer la librarie Camposha augmenterait la taille de l'application malgré le fait qu'elle soit plus simple à utiliser. Étant donné que le système de notification que je souhaite implémenter n'est pas complexe, ni très long, le système de notification fourni par le SDK Android est suffisant.
 										</p>
 
 									</div>
 
-									<div id="git"><button><a href="https://github.com/TLBail/CityDex">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/TLBail/CityDex" data-i18n="projects.source_code">Code Source</a></button></div>
 
 								</section>
 							</div>
@@ -190,72 +190,68 @@
 	  						<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">Cocktails</h1>
+										<h1 class="major" data-i18n="projects.cocktails.title">Cocktails</h1>
 										<span class="image fit"><img src="images/icon_cocktails.png" alt="" /></span>
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.cocktails.full_description">
 											Ce projet avait pour but de mettre en application nos compétences côté Web serveur. Nous avons donc décidé de faire un site internet listant des cocktails avec différentes informations à partir d'une base de données et la possibilité pour l'utilisateur de chercher un cocktail par son nom ou de chercher les cocktails qu'il est possible de réaliser à partir d'ingrédients rentrés par l'utilisateur (système de critères de tri).
 										</p>
 
-										<h3>Aspects Techniques</h3>
+										<h3 data-i18n="projects.cocktails.technical_title">Aspects Techniques</h3>
 
-										<p>
+										<p data-i18n="projects.cocktails.technical_description">
 											Nous avons réalisé ce projet avec, côté client HTML5 et CSS3 et côté serveur le langage PHP ainsi qu'une base de données PHP MyAdmin. Nous avons mis en place lors des recherches utilisateurs de l'Ajax pour que les requêtes se fassent dynamiquement et qu'une seule partie de la page soit rechargée à chaque requête pour une meilleure expérience utilisateur. Notre site web est hébergé sur un raspbery py dont dispose un collaborateur.
 										</p>
 
-										<h3>Quelques photos du site Internet</h3>
+										<h3 data-i18n="projects.cocktails.photos_title">Quelques photos du site Internet</h3>
 
 										<section id="photosCocktails">
 											<img src="./images/cocktails_chargement.png" alt="Page de chargement de Cocktails"/>
 											<img src="./images/cocktails_ingredient.png" alt="Page principale de Cocktails"/>
 										</section>
 
-										<h3>Où trouver notre projet ?</h3>
+										<h3 data-i18n="projects.cocktails.where_to_find_title">Où trouver notre projet ?</h3>
 
-										<p>Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien.</a>
-											Si vous souhaitez regarder le code source, il est disponible directement via <a href="https://github.com/Suna24/Cocktails">ce lien.</a>
+										<p data-i18n="[html]projects.cocktails.where_to_find_description">
+											Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien</a>. Si vous souhaitez regarder le code source, il est disponible directement via <a href="https://github.com/Suna24/Cocktails">ce lien.</a>
 										</p>
 
-										<h3>Maintenance & Veille Technologique</h3>
+										<h3 data-i18n="projects.cocktails.maintenance_title">Maintenance & Veille Technologique</h3>
 										<h4>Description</h4>
 
-										<p>
-										   Durant ma formation, j'ai du mettre ce projet en maintenance. Après réflexion, j'ai décidé d'implémenter deux nouvelles fonctionnalités pour ce site internet. La première étant la possibilité d'ajouter un cocktail à la base de données à l'aide d'une nouvelle page sur le site. Néanmoins, comme ce site est accessible à tous en public, il fallait vérifier les insertions des utilisateurs. En attente d'un (futur) système de comptes administrateurs et utilisateurs, j'ai décidé de rendre accessible cette page à l'aide d'un mot de passe et d'empêcher toute saisie de caractères dans les inputs qui pourraient altérer les données de la base de données.<br/> La seconde fonctionnalité que j'ai décidé d'implémenter est un système de like/dislike pour chacun des cocktails proposés, l'utilisateur peut alors
-										   voir quels sont les cocktails préférés des autres utilisateurs.
+										<p data-i18n="[html]projects.cocktails.maintenance_description">
+										   Durant ma formation, j'ai du mettre ce projet en maintenance. Après réflexion, j'ai décidé d'implémenter deux nouvelles fonctionnalités pour ce site internet. La première étant la possibilité d'ajouter un cocktail à la base de données à l'aide d'une nouvelle page sur le site. Néanmoins, comme ce site est accessible à tous en public, il fallait vérifier les insertions des utilisateurs. En attente d'un (futur) système de comptes administrateurs et utilisateurs, j'ai décidé de rendre accessible cette page à l'aide d'un mot de passe et d'empêcher toute saisie de caractères dans les inputs qui pourraient altérer les données de la base de données.<br/> La seconde fonctionnalité que j'ai décidé d'implémenter est un système de like/dislike pour chacun des cocktails proposés, l'utilisateur peut alors voir quels sont les cocktails préférés des autres utilisateurs.
 										</p>
 
-										<h4>Veille Technologique</h4>
+										<h4 data-i18n="projects.cocktails.technological_watch_title">Veille Technologique</h4>
 
-										<p>
-											Afin d'implémenter ces deux fonctionnalités, j'ai du réfléchir à quelles technologies j'allais utiliser. Pour le système d'ajout de cocktails dans la base de données, j'ai décidé de réutiliser les technologies que l'on avait utilisées pour le projet c'est à dire le PHP et les formulaires. Grâce à un envoi en POST d'un objet cocktail en JSON (généré avec Javascript), le PHP se charge de récupérer ces données puis de les utiliser pour insérer un nouveau cocktail dans la base de données en gérant toutes les clés étrangères liées aux différentes tables de la base de données. Par conséquent, je n'ai pas fait de veille technologique pour l'implémentation de cette fonctionnalité.<br/> En revanche, pour ce qui est de l'implémentation du système de like/dislike, j'ai du me décider entre deux technologies, la première étant 
-											<a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started"> l'Ajax </a> et la seconde <a href="https://developer.mozilla.org/fr/docs/Web/API/WebSocket">les webSockets</a>. 
-											En effet, pour le confort des utilisateurs, il fallait qu'à chaque like ou dislike, la page ne soit pas rechargée entièrement mais que les données au sein de la base de données soient quand même mises à jour.
+										<p data-i18n="[html]projects.cocktails.technological_watch_description">
+											Afin d'implémenter ces deux fonctionnalités, j'ai du réfléchir à quelles technologies j'allais utiliser. Pour le système d'ajout de cocktails dans la base de données, j'ai décidé de réutiliser les technologies que l'on avait utilisées pour le projet c'est à dire le PHP et les formulaires. Grâce à un envoi en POST d'un objet cocktail en JSON (généré avec Javascript), le PHP se charge de récupérer ces données puis de les utiliser pour insérer un nouveau cocktail dans la base de données en gérant toutes les clés étrangères liées aux différentes tables de la base de données. Par conséquent, je n'ai pas fait de veille technologique pour l'implémentation de cette fonctionnalité.<br/> En revanche, pour ce qui est de l'implémentation du système de like/dislike, j'ai du me décider entre deux technologies, la première étant <a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started"> l'Ajax </a> et la seconde <a href="https://developer.mozilla.org/fr/docs/Web/API/WebSocket">les webSockets</a>. En effet, pour le confort des utilisateurs, il fallait qu'à chaque like ou dislike, la page ne soit pas rechargée entièrement mais que les données au sein de la base de données soient quand même mises à jour.
 										</p>
 
 										<ul class="VeilleTechno">
 
-											<li>AJAX</li>
+											<li data-i18n="projects.cocktails.ajax.title">AJAX</li>
 
-											<p>
+											<p data-i18n="projects.cocktails.ajax.description">
 												La technologie AJAX (Asynchronous Javascript + XML) est une technologie que je maîtrise déjà et que j'ai déjà utilisé dans ce projet, notamment pour l'affichage des cocktails en fonction des différents critères de tri comme la sélection de cocktails en fonction des ingrédients sélectionnés par l'utilisateur. L'AJAX utilise le protocole HTTP et est appelé lors d'une requête client au serveur, ce dernier va alors ensuite envoyer une réponse au client et la connection se termine. Cette technologie est utile lorsqu'il n'y a pas de gros volumes de données à tranférer (notre cas actuellement).
 											</p>
 
-											<li>WebSockets</li>
+											<li data-i18n="projects.cocktails.websockets.title">WebSockets</li>
 
-											<p>
-												WebSockets est une technologie que je ne connais pas encore ou très peu (je suis en ce moment sur un projet qui utilise cette technologie et je suis en train de l'apprendre) mais qui est également utile pour une communication en temps réel avec la base de données. La connexion est donc permanente et on peut constamment échanger des données entre le client et le serveur. WebSocket est donc plus effiace en terme de rapidité et de performance car il n'y a pas besoin de faire la connexion plusieurs fois. Néanmoins, cette technologie est globalement moins sécurisée qu'AJAX même si l'on peut configurer un socket crypté.
-
+											<p data-i18n="projects.cocktails.websockets.description">
+												WebSockets est une technologie que je ne maîtrise pas encore, ou très peu (je travaille actuellement sur un projet qui l'utilise et je suis en train de l'apprendre). Cependant, elle est également utile pour une communication en temps réel avec la base de données. La connexion reste ouverte, ce qui permet un échange continu de données entre le client et le serveur. WebSocket est donc plus efficace en termes de rapidité et de performance, car il n'est pas nécessaire de réétablir la connexion à chaque requête. Néanmoins, cette technologie est généralement moins sécurisée qu'AJAX, bien qu'il soit possible de configurer une socket chiffrée.
 										</ul>
 
-										<p>
-											Les deux technologies AJAX et WebSockets sont toutes le deux intéressantes à utiliser et présentes chacunes leurs spécificités. Néanmoins, pour des raisons de simplicité et de cohérence avec ce que l'on avait pu faire avant, j'ai décidé d'utiliser l'AJAX comme c'est une technologie que je connais et que je maîtrise et qui est globalement mieux sécurisée que WebSockets. De plus, je n'ai pas nécessairement besoin d'établir une connection permanente avec le serveur et la base de données (chose que permet webSockets), puisque le volume de données transmis (une mise à jour d'un colonne d'une table) est très petit.
+										<p data-i18n="projects.cocktails.comparative_analysis">
+											Les technologies AJAX et WebSockets sont toutes deux intéressantes à utiliser, chacune ayant ses spécificités. Cependant, pour des raisons de simplicité et de cohérence avec ce que nous avions fait auparavant, j'ai décidé d'utiliser AJAX, car c'est une technologie que je connais et maîtrise, et qui est globalement plus sécurisée que WebSockets. De plus, je n'ai pas nécessairement besoin d'établir une connexion permanente avec le serveur et la base de données (ce que permet WebSockets), puisque le volume de données transmis (une mise à jour d'une colonne d'une table) est très faible.
 										</p>
 
 									</div>
 
-									<div id="git"><button><a href="https://github.com/Suna24/Cocktails">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/Suna24/Cocktails" data-i18n="projects.source_code">Code Source</a></button></div>
 
 								</section>
 							  </div>
@@ -263,23 +259,23 @@
 							  <div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">Lethal League</h1>
+										<h1 class="major" data-i18n="projects.lethal_league.title">Lethal League</h1>
 	
 										<span class="image fit"><img src="images/icon_lethal_league.jpg" alt="Lethal League logo" /></span>
 	
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="[html]projects.lethal_league.full_description">
 										   Dans le cadre d'un projet scientifique et technique, nous devions développer un jeu type arcade en Python. Nous avons donc décidé de reprendre le jeu du même nom : <a href="https://store.steampowered.com/app/553310/Lethal_League_Blaze/?l=french">Lethal League</a>. Il s'agit d'un jeu de balle où le but est de frapper la balle avec votre batte pour la faire accélérer et toucher votre adversaire. Le jeu permet de sélectionner parmi 6 personnages différents, chacun ayant des caractéristiques qui lui sont propres.
 										</p>
 									
-										<h3>Aspects techniques</h3>
+										<h3 data-i18n="projects.lethal_league.technical_title">Aspects techniques</h3>
 
-										<p>
-											Le jeu a été développé à l'aide de Python et de l'éditeur de code PyCharm. Nous avons également utilisé la librairie PyGame.
+										<p data-i18n="projects.lethal_league.technical_description">
+											Le jeu a été développé à l'aide de Python et de l'éditeur de code PyCharm. Nous avons utilisé la librairie Pygame pour créer le jeu, ce qui nous a permis de gérer facilement les graphismes, les sons et les interactions avec l'utilisateur.
 										</p>
 
-										<h3>Quelques photos du jeu</h3>
+										<h3 data-i18n="projects.lethal_league.photos_title">Quelques photos du jeu</h3>
 
 										<section id="photoLethalLeague">
 											<img src="./images/lethal-league_characters.png" alt="Sélection de personnages"/>
@@ -287,34 +283,34 @@
 										</section>
 										
 									</div>
-									<div id="git"><button><a href="https://github.com/Suna24/Lethal-League">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/Suna24/Lethal-League" data-i18n="projects.source_code">Code Source</a></button></div>
 								</section>
 							</div>
 
 							<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">OCTOPUS</h1>
+										<h1 class="major" data-i18n="projects.octopus.title">Octopus</h1>
 
 										<span class="image fit"><img src="images/icon_octopus.png" alt="Octopus logo" /></span>
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="[html]projects.octopus.full_description">
 											Dans le cadre de mon projet scientifique et technique de 4ème année à l'ESIEA, nous devions reprendre un projet déjà existant d'une station blanche. Une station blanche est un dispositif specialement conçu pour analyser et examiner le contenu de clés USB de manière sécurisée et sans altération. La station se charge ensuite de supprimer les éventuels fichiers malveillants de la clé. Le projet est entièrement open-source. Cette station blanche a fini par être déployée au <b>Secrétariat Général pour l'Administration du Ministère de l'Intérieur (SGAMI)</b> de Rennes par un de mes camarades lors de son stage de 4ème année.
 										</p>
 
-										<h3>Fonctionnement</h3>
+										<h3 data-i18n="projects.octopus.how_it_works">Fonctionnement</h3>
 
-										<p>
-											Le fonctionnement de la station se fait selon l'image ci-dessous. On a ici 3 machines différentes : la station Octopus sur laquelle l'utilisateur va venir brancher sa clé USB qui est dotée d'une interface web; le contrôleur qui est une machine qui va venir mettre à jour la station (et éventuellement toutes les stations en réseau par la suite) et enfin le serveur de logs qui va stocker les données de la station une fois l'analyse de la clé USB terminée. La station blanche Octopus est capable d'acceuillir jusqu'à 4 clés USB en même temps.
+										<p data-i18n="projects.octopus.how_it_works_description">
+											Le fonctionnement de la station se fait selon l'image ci-dessous. On a ici 3 machines différentes : la station Octopus sur laquelle l'utilisateur va venir brancher sa clé USB qui est dotée d'une interface web; le contrôleur qui est une machine qui va venir mettre à jour la station (et éventuellement toutes les stations en réseau par la suite) et enfin le serveur de logs qui va stocker les données de la station une fois l'analyse de la clé USB terminée. La station blanche Octopus est capable d'accueillir jusqu'à 4 clés USB en même temps.
 										</p>
 
 										<img id="octopus_worflow" src="./images/octopus_workflow.png" alt="Fonctionnement de la station Octopus" />
 
-										<h3>Objectifs du projet</h3>
+										<h3 data-i18n="projects.octopus.objectives_title">Objectifs du projet</h3>
 
-										<div>
+										<div data-i18n="[html]projects.octopus.objectives_description">
 											Nous avons établi 3 objectifs majeurs à réaliser pour le premier semestre :
 											<ul>
 												<li>Refonte de l'interface graphique</li>
@@ -323,13 +319,13 @@
 											</ul>
 										</div>
 
-										<h3>Aspects techniques</h3>
+										<h3 data-i18n="projects.octopus.technical_title">Aspects techniques</h3>
 
-										<p>
+										<p data-i18n="projects.octopus.technical_description">
 											La station blanche originelle a été développée majoritairement en Bash; le déploiement est quant à lui fait avec Ansible et l'interface web de la station a été réalisée avec NodeJS et Vue.js. Après avoir pris en main le projet, nous avons décidé de refaire l'interface graphique avec React et de refaire le backend à cause d'une librairie dépréciée qui rendait le travail vraiment compliqué.
 										</p>
 
-										<h3>Affiche projet</h3>
+										<h3 data-i18n="projects.octopus.poster_title">Affiche projet</h3>
 
 										<img id="octopus_poster" src="./images/octopus_poster.png" alt="Affiche projet d'Octopus"/>
 									</div>
@@ -339,59 +335,55 @@
 							<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">Optimisation Combinatoire</h1>
+										<h1 class="major" data-i18n="projects.optimization.title">Optimisation Combinatoire</h1>
 
 										<span class="image fit"><img src="images/icon_combinatory_optimization.png" alt="Combinatory optimization logo" /></span>
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.full_description">
 										   Dans le cadre du cours "Numerical in Python" suivi lors de ma 4ème année à l'ESIEA, j'ai eu l'opportunité de travailler sur la résolution d'un problème NP complexe. Le but de ce projet s'apparente à la résolution du problème de la clique maximum au sein d'un graphe. Le problème de la clique maximum est un problème d'optimisation combinatoire qui consiste à trouver le plus grand sous-ensemble de sommets d'un graphe complet tel que tous les sommets du sous-ensemble sont adjacents entre eux. En d'autres termes, il s'agit de trouver le plus grand ensemble de sommets dans lequel chaque paire de sommets est connectée par une arête.
 										</p>
 									
-										<h3>Aspects techniques</h3>
+										<h3 data-i18n="projects.optimization.technical_title">Aspects techniques</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.technical_description">
 											Le projet a été réalisé en Python sur le logiciel PyCharm. Aucune librairie additionnelle permettant de résoudre ce problème n'a été utilisée, nous avons dû implémenter nos propres solutions en explorant différentes approches.
 										</p>
 
-										<h3>Approches considérées</h3>
+										<h3 data-i18n="projects.optimization.algorithms.title">Approches considérées</h3>
 
-										<h4>Algorithme Glouton</h4>
+										<h4 data-i18n="projects.optimization.algorithms.glouton.title">Algorithme glouton</h4>
 
-										<p>
-											L'algorithme glouton est un algorithme simple utilisé pour trouver une clique dans un graphe. Il est défini comme un algorithme qui prend des décisions locales optimales chaque étape dans le but d'obtenir une solution globale optimale au problème. Il commence par sélectionner le sommet le plus "puissant" (c'est à dire celui dont le produit du poids par son nombre de relations est le plus élevé). ce sommet est ajouté à la clique. Ensuite, l'algorithme cherche un autre sommet puissant qui est connecté à tous les sommets déjà présents dans la clique. S'il en trouve un, il l'ajoute à la clique. Ce processus se répète jusqu'à ce qu'il n'y ait plus de sommet compatible à ajouter.
+										<p data-i18n="[html]projects.optimization.algorithms.glouton.description">
+											L'algorithme glouton est un algorithme simple utilisé pour trouver une clique dans un graphe. Il est défini comme un algorithme qui prend des décisions locales optimales chaque étape dans le but d'obtenir une solution globale optimale au problème. Il commence par sélectionner le sommet le plus "puissant" (c'est à dire celui dont le produit du poids par son nombre de relations est le plus élevé). ce sommet est ajouté à la clique. Ensuite, l'algorithme cherche un autre sommet puissant qui est connecté à tous les sommets déjà présents dans la clique. S'il en trouve un, il l'ajoute à la clique. Ce processus se répète jusqu'à ce qu'il n'y ait plus de sommet compatible à ajouter.<br><br>L'algorithme glouton est en général rapide dans son exécution mais va se limiter à un optimum local qui est toujours prédéfini par son choix premier, il y a donc de nombreux cas où celui-ci n'atteindra pas le résultat optimal par manque de possibilité de suivre un autre chemin optimal.
 										</p>
 
-										<p>
-											L'algorithme glouton est en général rapide dans son exécution mais va se limiter à un optimum local qui est toujours prédéfini par son choix premier, il y a donc de nombreux cas où celui-ci n'atteindra pas le résultat optimal par manque de possibilité de suivre un autre chemin optimal.
-										</p>
+										<h4 data-i18n="projects.optimization.algorithms.bron.title">Algorithme de Bron-Kerbosch</h4>
 
-										<h4>Algorithme de Bron-Kerbosch</h4>
-
-										<p>
+										<p data-i18n="projects.optimization.algorithms.bron.description">
 											L'algorithme de Bron-Kerbosch est un algorithme d'énumération qui permet, en listant l'ensemble des cliques de l'instance d'en récupérer la maximale existante. Bien qu'étant sûr de trouver la solution optimale globale à chaque fois, cet algorithme est très coûteux en temps de calcul et en mémoire puisqu'il liste l'intégralité des cliques possibles dans le graphe. Il est donc peu adapté pour des graphes de grande taille.
 										</p>
 
-										<h4>Algorithme génétique</h4>
+										<h4 data-i18n="projects.optimization.algorithms.genetic.title">Algorithme génétique</h4>
 
-										<p>
+										<p data-i18n="projects.optimization.algorithms.genetic.description">
 											L'algorithme génétique est un algorithme d'évolution métaheuristique qui se caractérise par sa capacité à explorer une vaste et diverse population en se basant sur le processus de sélection naturelle observé dans la nature. Les meilleures solutions d'une itération vont produire des enfants qui seront meilleurs au fur et à mesure du temps. L'implémentation de l'algorithme génétique nécessite l'utilisation d'aléatoire dans le processus de croisement et de mutation ce qui va grandement apporter de la diversité et faire varier les possibilités et les implémentations de cet algorithme. En paramètre, l'algorithme nécessite la taille de la population à générer (le nombre de solutions à calculer), le nombre d'individus sélectionnés pour la reproduction ainsi que la probabilité de croisement et de mutation qui permettent de rendre plus aléatoire la génération actuelle et ses suivantes. Afin de gérer notre croisement de reproduction nous avons implémenté un croisement multipoints (aléatoire en 2 et 4 points)
 										</p>
 
-										<h4>Algorithme de colonies de fourmis</h4>
+										<h4 data-i18n="projects.optimization.algorithms.ant.title">Algorithme de colonies de fourmis</h4>
 										
-										<p>
+										<p data-i18n="projects.optimization.algorithms.ant.description">
 											Nous nous sommes ensuite penchés sur une seconde méta-heuristique et avons choisi d'implémenter l'ACO (Ant Colony Optimization). Cet algorithme utilise le comportement naturel des fourmis et des phéromones qu'elles déposent afin de trouver une solution envisageable. Dans le contexte des cliques, l'algorithme génère d'abord plusieurs solutions candidates (cliques). Les "fourmis" construisent ces solutions en suivant des probabilités influencées par des traces de phéromones (qui représentent les bonnes décisions des populations précédentes). À chaque itération, les meilleures cliques influencent la population suivante, grâce à une mise à jour des phéromones. Ce processus continue jusqu'à ce que la limite de temps soit atteinte.
 										</p>
 										
-										<h3>Résultats</h3>
+										<h3 data-i18n="projects.optimization.results_title">Résultats</h3>
 
-										<p>
+										<p data-i18n="projects.optimization.results_description">
 											Tous les résultats obtenus sont présentés dans le rapport annexe disponible sur le GitHub du projet. Nous avons pu identifier un problème récurrent à nos algorithmes, à savoir que ceux-ci ne sortent pas assez de leur optimum local. En effet nos solutions restent bloquées dans des solutions similaires malgré l'évolution et la diversité qu'ils imposent. Un autre point d'optimisation serait aussi de modifier l'implémentation du code et de l'utilisation des données, nous avons effectué un énorme travail d'optimisation qui pourrait être maximisé en remplaçant la structure actuelle par des matrices d'adjacence notamment et en compressant les graphes. Notre algorithme le plus puissant actuellement est l'algorithme génétique qui itère énormément au vu de son optimisation et qui trouve des résultats plutôt convergents.
 										</p>
 									</div>
-									<div id="git"><button><a href="https://github.com/Keyraus/NumericalTop1">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/Keyraus/NumericalTop1" data-i18n="projects.source_code">Code Source</a></button></div>
 								</section>
 							</div>
 							
@@ -426,6 +418,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/swiper.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+			<script src="assets/js/i18n.js"></script>
 
 	</body>
 </html>
