@@ -167,6 +167,35 @@ $(function () {
                   title: "CityDex",
                   description:
                     "Java coded mobile application for collecting city signs.",
+                  full_description:
+                    "As part of a semester project, we had to create an Android mobile application similar to a Pokédex, cataloging photos taken by the user grouped around a theme: city signs. It is important to note that this application only deals with city signs in France, including both mainland France and overseas territories (Mayotte, La Réunion, Saint Pierre and Miquelon…). The application is named CityDex. The user collects city signs in their CityDex, with the goal of having as many as possible.",
+                  details_description:
+                    "This application allows users to catalog the different cities they have visited and provides proof of their visits through photos of city signs. The application also aims to provide various information to users about the cities from which they have taken photos.",
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "For this project, we had to use the Java programming language and Android Studio as the development environment. To recognize a sign in an image, we trained a TensorFlow model with over 250 labeled images of signs. We also used the Tesseract library for character recognition to identify the city name on the sign.",
+                  photos_title: "Some photos of the application",
+                  where_to_find_title: "Where to find our project?",
+                  where_to_find_description:
+                    'You can access the source code of our application directly via  <a href="https://github.com/TLBail/CityDex">this link</a> or download the application directly from the Play Store by searching for CityDex!',
+                  maintenance_title: "Maintenance & Technological Watch",
+                  maintenance_description:
+                    "During my studies, I had to put this application into maintenance to fix some bugs and improve some user interfaces. I specifically worked on making the interfaces adaptable to a wide range of devices and screens. I also decided to add a new feature to the application: a notification system. The user is notified upon launching the application if they are in a city for which they do not have the sign, using location services to retrieve the user's coordinates, deduce the city they are in, and send a notification. I also ensured that the dark mode did not affect the application, as it caused interface issues, and I participated in refactoring the application.",
+                  technological_watch_title: "Technological Watch",
+                  technological_watch_description:
+                    'To implement this new feature, I had two options: either use the notification system provided by the classes already implemented in the <a href="https://developer.android.com/training/notify-user/build-notification">Android SDK</a> or use a library to import into the application, such as the one from <a href="https://camposha.info/android-examples/android-notification-libraries/">Camposha.info</a>. I conducted a technological watch on each of these technologies to determine which would be best suited for implementing this new feature.',
+                  android_sdk: {
+                    title: "Android SDK Notification",
+                    description:
+                      'The notification system is "pre-installed" in the Android SDK, so there is no need to import anything into the application. Additionally, the Android SDK has very good documentation, making it relatively easy to navigate through all the functions and attributes. Many tutorials and projects are available, so if I encounter any issues, I can quickly find an effective solution.',
+                  },
+                  camposha: {
+                    title: "Camposha Library",
+                    description:
+                      "The Camposha library also seems suitable for implementing the notification system. However, it is a library, so it needs to be imported into the application. On the other hand, the library offers a much simpler way to create and manage notifications, making it easier to understand and use.",
+                  },
+                  comparative_analysis:
+                    "In conclusion, both technologies have their advantages and disadvantages. Importing the Camposha library would increase the size of the application, even though it is easier to use. Since the notification system I want to implement is not complex or lengthy, the notification system provided by the Android SDK is sufficient.",
                 },
                 cocktails: {
                   title: "Cocktails",
@@ -362,6 +391,35 @@ $(function () {
                   title: "CityDex",
                   description:
                     "Application mobile de collection de panneaux d'agglomération codée en Java.",
+                  full_description:
+                    "Dans le cadre d'un projet de semestre, nous avons du créer une application mobile android de type pokédex répertoriant des photos prises par l'utilisateur regroupées autour d'une thématique : les panneaux d'agglomérations. Il est important de noter que cette application traite seulement des panneaux d'agglomération sur le territoire français regroupant donc la métropole française mais aussi les territoires d'outre mer (Mayotte, La Réunion, Saint Pierre et Miquelon…). L'application a pour nom CityDex. L'utilisateur collectionne donc des panneaux dans son CityDex, l'objectif étant d'en avoir le plus possible.",
+                  details_description:
+                    "Cette application permet aux utilisateurs de répertorier les différentes villes où ils sont allés, et d'avoir pour preuve les panneaux d'agglomérations. Cette application a aussi pour but de fournir diverses informations aux utilisateurs sur les villes dont ils ont pris le panneau en photo.",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "Nous avons du pour ce projet utiliser le langage Java et le logiciel Android Studio comme environnement de développement. Pour reconnaître un panneau dans une image, nous avons entraîné un modèle TensorFlow avec plus de 250 images de panneaux que nous avons labelisées. Nous avons également utilisé la librairie Tesseract pour la reconnaissance de caractère et ainsi reconnaître le nom de la ville sur le panneau.",
+                  photos_title: "Quelques photos de l'application",
+                  where_to_find_title: "Où trouver notre projet ?",
+                  where_to_find_description:
+                    'Vous pouvez avoir accès directement au code source de notre application via <a href="https://github.com/TLBail/CityDex">ce lien</a> mais également télécharger l\'application directement sur le PlayStore en écrivant CityDex dans la barre de recherche !',
+                  maintenance_title: "Maintenance & Veille Technologique",
+                  maintenance_description:
+                    "Durant ma formation, j'ai du mettre cette application en maintenance afin de corriger quelques bugs ou améliorer certaines interfaces utilisateurs. J'ai notamment essayé à ce que les interfaces soient adaptables au plus grand nombre d'appareils et d'écrans possibles. J'ai également décidé d'ajouter une nouvelle fonctionnalité à l'application : un système de notification. L'utilisateur est donc prévenu au lancement de l'application s'il se trouve dans une ville dont il ne possède pas le panneau grâce à la localisation qui va récupérer les coordonnées de l'utilisateur, en déduire la ville où il se trouve et envoyer un notification. J'ai également fais en sorte que le mode nuit n'impacte pas sur l'application étant donné qu'il causait des problèmes d'interfaces et j'ai participé à un refactoring de l'application.",
+                  technological_watch_title: "Veille technologique",
+                  technological_watch_description:
+                    "Afin d'implémenter cette nouvelle fonctionnalité, je disposais de deux choix, soit j'utilisais le système de notifications grâce aux classes déjà implémentées dans le <a href=\"https://developer.android.com/training/notify-user/build-notification\">SDK Android</a> ou bien une librairie à importer dans l'application comme celle de <a href=\"https://camposha.info/android-examples/android-notification-libraries/\">Camposha.info</a> par exemple. J'ai donc procédé à une veille technologique sur chacune de ces technologies afin de déterminer laquelle conviendrai le mieux pour réaliser cette nouvelle fonctionnalité.",
+                  android_sdk: {
+                    title: "Notification du SDK Android",
+                    description:
+                      "Le système de notification est \"pré-installé\" dans le SDK Android, il n'y a donc pas besoin d'importer quoi que ce soit dans l'application. De plus, le SDK Android possède une très bonne documentation et il est plutôt simple de s'y retrouver parmi toutes les fonctions et attributs. De nombreux tutoriels et de projets sont disponibles, donc si j'ai un quelconque problème, je n'aurais pas de mal à trouver une solution efficace rapidement.",
+                  },
+                  camposha: {
+                    title: "Librairie Camposha",
+                    description:
+                      "La librarie Camposha semble également adaptée pour implémenter le système de notification. Néanmoins, il s'agit d'une librairie, par conséquent il faut l'importer dans l'application. En revanche, la librarie propose une version beaucoup plus simplifiée pour la création et la gestion de notifications ce qui la rend plus simple à comprendre et à utiliser.",
+                  },
+                  comparative_analysis:
+                    "Pour conclure, les deux technologies présentent leurs avantages et leur inconvénients. Importer la librarie Camposha augmenterait la taille de l'application malgré le fait qu'elle soit plus simple à utiliser. Étant donné que le système de notification que je souhaite implémenter n'est pas complexe, ni très long, le système de notification fourni par le SDK Android est suffisant.",
                 },
                 cocktails: {
                   title: "Cocktails",

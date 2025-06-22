@@ -118,21 +118,21 @@
 										
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.citydex.full_description">
 											Dans le cadre d'un projet de semestre, nous avons du créer une application mobile android de type pokédex répertoriant des photos prises par l'utilisateur regroupées autour d'une thématique : les panneaux d'agglomérations. Il est important de noter que cette application traite seulement des panneaux d'agglomération sur le territoire français regroupant donc la métropole française mais aussi les territoires d'outre mer (Mayotte, La Réunion, Saint Pierre et Miquelon…). L'application a pour nom CityDex. L'utilisateur collectionne donc des panneaux dans son CityDex, l'objectif étant d'en avoir le plus possible.
 										</p>
 
-										<p>
+										<p data-i18n="projects.citydex.details_description">
 											Cette application permet aux utilisateurs de répertorier les différentes villes où ils sont allés, et d'avoir pour preuve les panneaux d'agglomérations. Cette application a aussi pour but de fournir diverses informations aux utilisateurs sur les villes dont ils ont pris le panneau en photo.
 										</p>
 									
-										<h3>Aspects Techniques</h3>
+										<h3 data-i18n="projects.citydex.technical_title">Aspects Techniques</h3>
 										
-										<p>
+										<p data-i18n="projects.citydex.technical_description">
 											Nous avons du pour ce projet utiliser le langage Java et le logiciel Android Studio comme environnement de développement. Pour reconnaître un panneau dans une image, nous avons entraîné un modèle TensorFlow avec plus de 250 images de panneaux que nous avons labelisées. Nous avons également utilisé la librairie Tesseract pour la reconnaissance de caractère et ainsi reconnaître le nom de la ville sur le panneau.
 										</p>
 
-										<h3>Quelques photos de l'application</h3>
+										<h3 data-i18n="projects.citydex.photos_title">Quelques photos de l'application</h3>
 
 										<section id="photosCityDex">
 											<img src="./images/citydex_page_de_chargement.jpg" alt="Photo de la page de chargement de CityDex"/>
@@ -142,47 +142,47 @@
 											<img src="./images/citydex_page_ville.png" alt="Photo de la page de description d'une ville"/>
 										</section>
 
-										<h3>Où trouver notre projet ?</h3>
+										<h3 data-i18n="projects.citydex.where_to_find_title">Où trouver notre projet ?</h3>
 
-										<p>
+										<p data-i18n="[html]projects.citydex.where_to_find_description">
 											Vous pouvez avoir accès directement au code source de notre application via <a href="https://github.com/TLBail/CityDex">ce lien</a> mais également télécharger l'application directement sur le PlayStore en écrivant CityDex dans la barre de recherche !
 										</p>
 
-										<h3>Maintenance & Veille Technologique</h3>
+										<h3 data-i18n="projects.citydex.maintenance_title">Maintenance & Veille Technologique</h3>
+
 										<h4>Description</h4>
 
-										<p>
-											Durant ma formation, j'ai du mettre cette application en maintenance afin de corriger quelques bugs ou améliorer certaines interfaces utilisateurs. J'ai notamment essayé à ce que les interfaces soient adaptables au plus grand nombre d'appareils et d'écrans possibles. J'ai également décidé d'ajouter une nouvelle fonctionnalité à l'application : un système de notification. L'utilisateur est donc prévenu au lancement de l'application s'il se trouve dans une ville dont il ne possède pas le panneau grâce à la localisation qui va récupérer les coordonnées de l'utilisateur, en déduire la ville où il se trouve et envoyer un notification. J'ai également fais en sorte que le mode nuit n'impacte pas sur l'application étant donné qu'il causait des problèmes d'interfaces et j'ai participé
-											à un refactoring de l'application.
+										<p data-i18n="projects.citydex.maintenance_description">
+											Durant ma formation, j'ai du mettre cette application en maintenance afin de corriger quelques bugs ou améliorer certaines interfaces utilisateurs. J'ai notamment essayé à ce que les interfaces soient adaptables au plus grand nombre d'appareils et d'écrans possibles. J'ai également décidé d'ajouter une nouvelle fonctionnalité à l'application : un système de notification. L'utilisateur est donc prévenu au lancement de l'application s'il se trouve dans une ville dont il ne possède pas le panneau grâce à la localisation qui va récupérer les coordonnées de l'utilisateur, en déduire la ville où il se trouve et envoyer un notification. J'ai également fais en sorte que le mode nuit n'impacte pas sur l'application étant donné qu'il causait des problèmes d'interfaces et j'ai participé à un refactoring de l'application.
 										</p>
 
-										<h4>Veille Technologique</h4>
+										<h4 data-i18n="projects.citydex.technological_watch_title">Veille Technologique</h4>
 											
-										<p>
+										<p data-i18n="[html]projects.citydex.technological_watch_description">
 											Afin d'implémenter cette nouvelle fonctionnalité, je disposais de deux choix, soit j'utilisais le système de notifications grâce aux classes déjà implémentées dans le <a href="https://developer.android.com/training/notify-user/build-notification">SDK Android</a> ou bien une librairie à importer dans l'application comme celle de <a href="https://camposha.info/android-examples/android-notification-libraries/">Camposha.info</a> par exemple. J'ai donc procédé à une veille technologique sur chacune de ces technologies afin de déterminer laquelle conviendrai le mieux pour réaliser cette nouvelle fonctionnalité.
 										</p>
 
 										<ul class="VeilleTechno">
-											<li>Notification du SDK Android</li>
+											<li data-i18n="projects.citydex.android_sdk.title">Notification du SDK Android</li>
 
-											<p>
+											<p data-i18n="projects.citydex.android_sdk.description">
 												Le système de notification est "pré-installé" dans le SDK Android, il n'y a donc pas besoin d'importer quoi que ce soit dans l'application. De plus, le SDK Android possède une très bonne documentation et il est plutôt simple de s'y retrouver parmi toutes les fonctions et attributs. De nombreux tutoriels et de projets sont disponibles, donc si j'ai un quelconque problème, je n'aurais pas de mal à trouver une solution efficace rapidement.
 											</p>
 
-											<li>Librairie Camposha</li>
+											<li data-i18n="projects.citydex.camposha.title">Librairie Camposha</li>
 
-											<p>
+											<p data-i18n="projects.citydex.camposha.description">
 												La librarie Camposha semble également adaptée pour implémenter le système de notification. Néanmoins, il s'agit d'une librairie, par conséquent il faut l'importer dans l'application. En revanche, la librarie propose une version beaucoup plus simplifiée pour la création et la gestion de notifications ce qui la rend plus simple à comprendre et à utiliser.
 											</p>
 										</ul>
 
-										<p>
+										<p data-i18n="projects.citydex.comparative_analysis">
 											Pour conclure, les deux technologies présentent leurs avantages et leur inconvénients. Importer la librarie Camposha augmenterait la taille de l'application malgré le fait qu'elle soit plus simple à utiliser. Étant donné que le système de notification que je souhaite implémenter n'est pas complexe, ni très long, le système de notification fourni par le SDK Android est suffisant.
 										</p>
 
 									</div>
 
-									<div id="git"><button><a href="https://github.com/TLBail/CityDex">Code Source du projet</a></button></div>
+									<div id="git"><button><a href="https://github.com/TLBail/CityDex" data-i18n="projects.source_code">Code Source</a></button></div>
 
 								</section>
 							</div>
