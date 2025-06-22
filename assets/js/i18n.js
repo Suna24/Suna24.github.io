@@ -135,6 +135,33 @@ $(function () {
                   title: "Rush Hour",
                   description:
                     "Small mobile application based on the Rush Hour board game coded in Java.",
+                  full_description:
+                    "The goal of this project was to create an Android application in the form of a small game. I chose to draw inspiration from the Rush Hour board game to create it. It is a game where the player must get the white car off the board. However, other cars block the way. The player must then move the other cars to free the white car from the board by pressing on the front of the vehicle if they want to move it forward and vice versa if they want to move it backward. The game features a score table with a star system, 40 unique levels, and music!",
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "To create this project, I used the Java programming language and the Android Studio development environment. I also worked with Firebase for score management and star saving. The game also connects to Google the first time you launch it.",
+                  photos_title: "Some photos of the application",
+                  where_to_find_title: "Where to find our project?",
+                  where_to_find_description:
+                    'If you want to see the source code of this game or even download it to play, you can find the GitHub repository via <a href="https://github.com/Suna24/Rush_Hour">this link</a>.',
+                  maintenance_title: "Maintenance & Technological Watch",
+                  maintenance_description:
+                    "During my studies, I had the opportunity to perform maintenance on this application to improve it. I focused on finding a feature that could make my application more appealing to users. There was already a score system in my application, where if a player completed a level within a certain time, they would earn stars that were saved on Firebase. However, the player had no limit on accumulating stars, meaning they could repeatedly play the same level and increase their star count as much as they wanted. I decided to address this by saving the number of stars for each level and displaying the star count under the level buttons. I also cleaned up and refactored some code to make it more readable.",
+                  technological_watch_title: "Technological Watch",
+                  technological_watch_description:
+                    "To implement this new feature and save user scores, I had to choose between two methods. The first was to save user scores directly on their internal local storage, while the second was to store and host these scores on Firebase.",
+                  local_storage: {
+                    title: "Local Storage",
+                    description:
+                      "Storing information locally has several advantages. Indeed, wherever the user is and even if they do not have an internet connection, their scores are saved on their device. Additionally, storing data on the user's device is entirely free and only requires permission from the user. Finally, access to data is fast, and security is enhanced. However, storing this data internally takes up space on the user's device, even though in this case, the file does not take up much space. The second drawback of this method is that you cannot interact with other players' scores, which can be problematic if you want to create a leaderboard of top scores, for example.",
+                  },
+                  firebase: {
+                    title: "Firebase",
+                    description:
+                      "On the other hand, storing data using hosting services like Firebase requires an internet connection to function. However, storing data on Firebase allows real-time access to all players' scores, enabling the creation of a leaderboard for top scores or best times among all players playing Rush Hour.",
+                  },
+                  comparative_analysis:
+                    "Both methods of storing player scores have their strengths and weaknesses. However, since I implemented a feature that establishes a leaderboard for top players using Firebase, I preferred to stick with this method of data storage, especially since I know how to use the API provided by Firebase for Android.",
                 },
                 citydex: {
                   title: "CityDex",
@@ -303,6 +330,33 @@ $(function () {
                   title: "Rush Hour",
                   description:
                     "Petite application mobile basée sur le jeu de société Rush Hour codée en Java.",
+                  full_description:
+                    "Le but de ce projet était de réaliser une application Android sous la forme d'un petit jeu. J'ai donc choisi de m'inspirer du jeu de société Rush Hour pour réaliser ce dernier. Il s'agit d'un jeu où le joueur doit faire sortir la voiture blanche du plateau. Seulement d'autres voitures bloquent le passage. Le joueur doit alors faire bouger les autres voitures pour libérer la blanche du plateau en appuyant sur l'avant du véhicule s'il souhaite la bouger vers l'avant et inversement s'il veut la faire se mouvoir vers l'arrière. Le jeu dispose d'un tableau des scores avec un système d'étoiles, de 40 niveaux uniques, ainsi que de musiques !",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "Pour réaliser ce projet, j'ai utilisé le langage Java et l'environnement de développement Android Studio. J'ai également travaillé avec Firebase pour la gestion des scores et l'enregistrement du nombre d'étoiles. Le jeu propose également une connection à Google la première fois que vous lancez le jeu.",
+                  photos_title: "Quelques photos de l'application",
+                  where_to_find_title: "Où trouver notre projet ?",
+                  where_to_find_description:
+                    'Si vous voulez voir le code source de ce jeu ou bien même le télécharger pour pouvoir y jouer, vous trouver le repository Github via <a href="https://github.com/Suna24/Rush_Hour">ce lien</a>.',
+                  maintenance_title: "Maintenance & Veille Technologique",
+                  maintenance_description:
+                    "Durant ma formation, j'ai eu l'occasion de faire une maintenance sur cette application afin de l'améliorer. Je me suis donc attaché à trouver une fonctionnalité qui pourrait rendre mon application plus attirante pour les utilisateurs. Il y avait déjà un système de scores dans mon application, si un joueur réussissais un niveau dans un temps imparti il récupérait un certains nombre d'étoiles qui était ensuite sauvegardé sur Firebase. Néanmoins le joueur n'avait pas de limite quant à l'accumulation des étoiles, c'est à dire qu'il pouvait enchainer le même niveau et incrémenter son nombre d'étoiles autant qu'il le souhaitait. J'ai donc décidé d'y remédier en sauvegardant le nombre d'étoiles pour chaque niveau et afficher ensuite sous les boutons de niveau le nombre d'étoile que possède le joueur. J'ai également décidé de nettoyer et de refactoriser un peu de code pour le rendre plus lisible.",
+                  technological_watch_title: "Veille technologique",
+                  technological_watch_description:
+                    "Afin d'implémenter cette nouvelle fonctionnalité et sauvegarder les scores des utilisateurs, j'ai du me décider entre deux moyens. Le premier était de sauvegarder les scores des utilisateurs directement sur leur stockage local interne, le second était de stocker et d'heberger ces scores sur Firebase.",
+                  local_storage: {
+                    title: "Stockage local",
+                    description:
+                      "Le stockage en local des informations présente plusieurs avantages. En effet, où que l'utilisateur se trouve et même s'il ne dispose pas de connexion internet, ses scores sont sauvegardés sur son appareil. De plus stocker des données sur l'appareil de l'utilisateur est entièrement gratuit et nécessite seulement une permission de la part de l'utilisateur. Enfin, l'accès aux données est rapide et la sécurité renforcée. Néanmoins, stocker ces données en interne prend de la place sur l'appareil de l'utilisateur même si ici, le fichier n'en prend pas beaucoup. Le second inconvénient de ce moyen et qu'on ne peut pas intéragir avec les scores des autres joueurs, ce qui peut poser problème si on souhaite faire un classement des meilleurs scores par exemple.",
+                  },
+                  firebase: {
+                    title: "Firebase",
+                    description:
+                      "En revanche, le stockage des données grâce à des services d'hébergement comme Firebase nécessite une connexion à internet pour fonctionner. Cependant, stocker ses données sur Firebase permet d'accéder en temps réel aux scores de tous les joueurs et par conséquent d'établir un classement des meilleurs scores ou des meilleurs temps et ce parmi tous les joueurs jouant à Rush Hour.",
+                  },
+                  comparative_analysis:
+                    "Les deux manières de stocker les scores des joueurs ont chacunes leurs atouts et leurs défauts, néanmoins, étant donné que j'ai implémenté une fonctionnalité établissant un classement des meilleurs joueurs avec Firebase, j'ai préféré rester avec ce même moyen de sauvegarde des données, d'autant que je sais comment utiliser l'API proposée par Firebase pour Android.",
                 },
                 citydex: {
                   title: "CityDex",
