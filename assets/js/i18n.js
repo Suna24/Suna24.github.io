@@ -657,3 +657,25 @@ $(function () {
       }
     );
 });
+
+// Update CV according to the language
+function updateCvLink() {
+  const lang = i18next.language || "en"; // get current language
+  const cvLink = document.getElementById("cv-link");
+
+  if (lang === "fr") {
+    cvLink.href = "CV-FR_Bastien_TAROT.pdf"; // French CV file
+    cvLink.textContent = i18next.t("intro.cv"); // "Voir mon CV"
+  } else {
+    cvLink.href = "CV-EN_Bastien_TAROT.pdf"; // English CV file
+    cvLink.textContent = i18next.t("intro.cv"); // "View my CV"
+  }
+}
+
+// After language change or init, call this function
+i18next.on("languageChanged", () => {
+  updateCvLink();
+});
+
+// Call once on init
+updateCvLink();
