@@ -201,6 +201,33 @@ $(function () {
                   title: "Cocktails",
                   description:
                     "Website referencing different cocktails and allowing the search for a cocktail and various ingredients.",
+                  full_description:
+                    "This project aimed to apply our skills on the server-side web development. We decided to create a website listing cocktails with various information from a database and allowing users to search for a cocktail by name or find cocktails they can make based on ingredients (filtering system).",
+                  technical_title: "Technical Aspects",
+                  technical_description:
+                    "We developed this project using HTML5 and CSS3 on the client side, and PHP along with a PHPMyAdmin database on the server side. During user search operations, we implemented Ajax to ensure that only parts of the page are reloaded dynamically with each request, providing a better user experience. Our website is hosted on a Raspberry Pi owned by one of our team members.",
+                  photos_title: "Some photos of the website",
+                  where_to_find_title: "Where to find our project?",
+                  where_to_find_description:
+                    'You can access to the website by following <a href="http://cocktailproject.ddns.net/">this link</a>. If you also want to see the source code, it is available via <a href="https://github.com/Suna24/Cocktails">this link</a>.',
+                  maintenance_title: "Maintenance & Technological Watch",
+                  maintenance_description:
+                    "During my studies, I had to perform maintenance on this project. After some thought, I decided to implement two new features for the website. The first was the ability to add a cocktail to the database through a new page on the site. However, since the site is publicly accessible, it was necessary to validate user input. While waiting for a (future) user and admin account system, I chose to protect this page with a password and prevent any input of characters that could compromise the database.<br/ > The second feature I decided to implement is a like/dislike system for each of the proposed cocktails, allowing users to see which cocktails are most liked by others.",
+                  technological_watch_title: "Technological Watch",
+                  technological_watch_description:
+                    'In order to implement these two features, I had to consider which technologies to use. For the cocktail addition system, I chose to reuse the technologies we had previously used for the project, namely PHP and forms. By sending a cocktail object as JSON via a POST request (generated with JavaScript), PHP retrieves the data and uses it to insert a new cocktail into the database, handling all foreign key relationships between the different database tables. As a result, I did not conduct any technology watch for implementing this feature.<br/> However, for the implementation of the like/dislike system, I had to choose between two technologies: the first being <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started">Ajax</a> and the second <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSockets</a>. Indeed, to ensure a smooth user experience, the page needed to avoid full reloads with each like or dislike, while still updating the data in the database accordingly.',
+                  ajax: {
+                    title: "AJAX",
+                    description:
+                      "The AJAX technology (Asynchronous JavaScript + XML) is a technology I am already proficient in and have previously used in this project, particularly for displaying cocktails based on different sorting criteria, such as selecting cocktails according to the ingredients chosen by the user. AJAX uses the HTTP protocol and is triggered by a client request to the server, which then sends a response back to the client, after which the connection ends. This technology is suitable when there is not a large volume of data to transfer (which is currently our case).",
+                  },
+                  websockets: {
+                    title: "WebSockets",
+                    description:
+                      "WebSockets is a technology I am not yet familiar with, or only know very little about (I am currently working on a project that uses it and I'm in the process of learning it). However, it is also useful for real-time communication with the database. The connection remains open, allowing continuous data exchange between the client and the server. WebSocket is therefore more efficient in terms of speed and performance, as there is no need to establish a new connection for each request. Nevertheless, this technology is generally less secure than AJAX, although it is possible to configure an encrypted socket.",
+                  },
+                  comparative_analysis:
+                    "Both AJAX and WebSockets are interesting technologies to use, each with their own specific features. However, for reasons of simplicity and consistency with what we had previously done, I decided to use AJAX, as it is a technology I know and master, and it is generally more secure than WebSockets. Moreover, I don't necessarily need to establish a permanent connection with the server and the database (which WebSockets allows), since the volume of data being transmitted (an update to a column in a table) is very small.",
                 },
                 lethal_league: {
                   title: "Lethal League",
@@ -431,6 +458,33 @@ $(function () {
                   title: "Cocktails",
                   description:
                     "Site Internet référançant différents cocktails et offrant la possibilité de recherche un cocktail et différents ingrédients.",
+                  full_description:
+                    "Ce projet avait pour but de mettre en application nos compétences côté Web serveur. Nous avons donc décidé de faire un site internet listant des cocktails avec différentes informations à partir d'une base de données et la possibilité pour l'utilisateur de chercher un cocktail par son nom ou de chercher les cocktails qu'il est possible de réaliser à partir d'ingrédients rentrés par l'utilisateur (système de critères de tri).",
+                  technical_title: "Aspects Techniques",
+                  technical_description:
+                    "Nous avons réalisé ce projet avec, côté client HTML5 et CSS3 et côté serveur le langage PHP ainsi qu'une base de données PHP MyAdmin. Nous avons mis en place lors des recherches utilisateurs de l'Ajax pour que les requêtes se fassent dynamiquement et qu'une seule partie de la page soit rechargée à chaque requête pour une meilleure expérience utilisateur. Notre site web est hébergé sur un raspbery py dont dispose un collaborateur.",
+                  photos_title: "Quelques photos du site",
+                  where_to_find_title: "Où trouver notre projet ?",
+                  where_to_find_description:
+                    'Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien</a>. Si vous souhaitez regarder le code source, il est disponible directement via <a href="https://github.com/Suna24/Cocktails">ce lien.</a>',
+                  maintenance_title: "Maintenance & Veille Technologique",
+                  maintenance_description:
+                    "Durant ma formation, j'ai du mettre ce projet en maintenance. Après réflexion, j'ai décidé d'implémenter deux nouvelles fonctionnalités pour ce site internet. La première étant la possibilité d'ajouter un cocktail à la base de données à l'aide d'une nouvelle page sur le site. Néanmoins, comme ce site est accessible à tous en public, il fallait vérifier les insertions des utilisateurs. En attente d'un (futur) système de comptes administrateurs et utilisateurs, j'ai décidé de rendre accessible cette page à l'aide d'un mot de passe et d'empêcher toute saisie de caractères dans les inputs qui pourraient altérer les données de la base de données.<br/> La seconde fonctionnalité que j'ai décidé d'implémenter est un système de like/dislike pour chacun des cocktails proposés, l'utilisateur peut alors voir quels sont les cocktails préférés des autres utilisateurs.",
+                  technological_watch_title: "Veille technologique",
+                  technological_watch_description:
+                    "Afin d'implémenter ces deux fonctionnalités, j'ai du réfléchir à quelles technologies j'allais utiliser. Pour le système d'ajout de cocktails dans la base de données, j'ai décidé de réutiliser les technologies que l'on avait utilisées pour le projet c'est à dire le PHP et les formulaires. Grâce à un envoi en POST d'un objet cocktail en JSON (généré avec Javascript), le PHP se charge de récupérer ces données puis de les utiliser pour insérer un nouveau cocktail dans la base de données en gérant toutes les clés étrangères liées aux différentes tables de la base de données. Par conséquent, je n'ai pas fait de veille technologique pour l'implémentation de cette fonctionnalité.<br/> En revanche, pour ce qui est de l'implémentation du système de like/dislike, j'ai du me décider entre deux technologies, la première étant <a href=\"https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started\"> l'Ajax </a> et la seconde <a href=\"https://developer.mozilla.org/fr/docs/Web/API/WebSocket\">les webSockets</a>. En effet, pour le confort des utilisateurs, il fallait qu'à chaque like ou dislike, la page ne soit pas rechargée entièrement mais que les données au sein de la base de données soient quand même mises à jour.",
+                  ajax: {
+                    title: "AJAX",
+                    description:
+                      "La technologie AJAX (Asynchronous Javascript + XML) est une technologie que je maîtrise déjà et que j'ai déjà utilisé dans ce projet, notamment pour l'affichage des cocktails en fonction des différents critères de tri comme la sélection de cocktails en fonction des ingrédients sélectionnés par l'utilisateur. L'AJAX utilise le protocole HTTP et est appelé lors d'une requête client au serveur, ce dernier va alors ensuite envoyer une réponse au client et la connection se termine. Cette technologie est utile lorsqu'il n'y a pas de gros volumes de données à tranférer (notre cas actuellement).",
+                  },
+                  websockets: {
+                    title: "WebSockets",
+                    description:
+                      "WebSockets est une technologie que je ne maîtrise pas encore, ou très peu (je travaille actuellement sur un projet qui l'utilise et je suis en train de l'apprendre). Cependant, elle est également utile pour une communication en temps réel avec la base de données. La connexion reste ouverte, ce qui permet un échange continu de données entre le client et le serveur. WebSocket est donc plus efficace en termes de rapidité et de performance, car il n'est pas nécessaire de réétablir la connexion à chaque requête. Néanmoins, cette technologie est généralement moins sécurisée qu'AJAX, bien qu'il soit possible de configurer une socket chiffrée.",
+                  },
+                  comparative_analysis:
+                    "Les technologies AJAX et WebSockets sont toutes deux intéressantes à utiliser, chacune ayant ses spécificités. Cependant, pour des raisons de simplicité et de cohérence avec ce que nous avions fait auparavant, j'ai décidé d'utiliser AJAX, car c'est une technologie que je connais et maîtrise, et qui est globalement plus sécurisée que WebSockets. De plus, je n'ai pas nécessairement besoin d'établir une connexion permanente avec le serveur et la base de données (ce que permet WebSockets), puisque le volume de données transmis (une mise à jour d'une colonne d'une table) est très faible.",
                 },
                 lethal_league: {
                   title: "Lethal League",

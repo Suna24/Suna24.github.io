@@ -190,67 +190,63 @@
 	  						<div class="swiper-slide">
 								<section id="main" class="wrapper">
 									<div class="inner">
-										<h1 class="major">Cocktails</h1>
+										<h1 class="major" data-i18n="projects.cocktails.title">Cocktails</h1>
 										<span class="image fit"><img src="images/icon_cocktails.png" alt="" /></span>
 
 										<h3>Description</h3>
 
-										<p>
+										<p data-i18n="projects.cocktails.full_description">
 											Ce projet avait pour but de mettre en application nos compétences côté Web serveur. Nous avons donc décidé de faire un site internet listant des cocktails avec différentes informations à partir d'une base de données et la possibilité pour l'utilisateur de chercher un cocktail par son nom ou de chercher les cocktails qu'il est possible de réaliser à partir d'ingrédients rentrés par l'utilisateur (système de critères de tri).
 										</p>
 
-										<h3>Aspects Techniques</h3>
+										<h3 data-i18n="projects.cocktails.technical_title">Aspects Techniques</h3>
 
-										<p>
+										<p data-i18n="projects.cocktails.technical_description">
 											Nous avons réalisé ce projet avec, côté client HTML5 et CSS3 et côté serveur le langage PHP ainsi qu'une base de données PHP MyAdmin. Nous avons mis en place lors des recherches utilisateurs de l'Ajax pour que les requêtes se fassent dynamiquement et qu'une seule partie de la page soit rechargée à chaque requête pour une meilleure expérience utilisateur. Notre site web est hébergé sur un raspbery py dont dispose un collaborateur.
 										</p>
 
-										<h3>Quelques photos du site Internet</h3>
+										<h3 data-i18n="projects.cocktails.photos_title">Quelques photos du site Internet</h3>
 
 										<section id="photosCocktails">
 											<img src="./images/cocktails_chargement.png" alt="Page de chargement de Cocktails"/>
 											<img src="./images/cocktails_ingredient.png" alt="Page principale de Cocktails"/>
 										</section>
 
-										<h3>Où trouver notre projet ?</h3>
+										<h3 data-i18n="projects.cocktails.where_to_find_title">Où trouver notre projet ?</h3>
 
-										<p>Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien.</a>
-											Si vous souhaitez regarder le code source, il est disponible directement via <a href="https://github.com/Suna24/Cocktails">ce lien.</a>
+										<p data-i18n="[html]projects.cocktails.where_to_find_description">
+											Vous pouvez avoir accès au site internet en suivant directement <a href="http://cocktailproject.ddns.net/">ce lien</a>. Si vous souhaitez regarder le code source, il est disponible directement via <a href="https://github.com/Suna24/Cocktails">ce lien.</a>
 										</p>
 
-										<h3>Maintenance & Veille Technologique</h3>
+										<h3 data-i18n="projects.cocktails.maintenance_title">Maintenance & Veille Technologique</h3>
 										<h4>Description</h4>
 
-										<p>
-										   Durant ma formation, j'ai du mettre ce projet en maintenance. Après réflexion, j'ai décidé d'implémenter deux nouvelles fonctionnalités pour ce site internet. La première étant la possibilité d'ajouter un cocktail à la base de données à l'aide d'une nouvelle page sur le site. Néanmoins, comme ce site est accessible à tous en public, il fallait vérifier les insertions des utilisateurs. En attente d'un (futur) système de comptes administrateurs et utilisateurs, j'ai décidé de rendre accessible cette page à l'aide d'un mot de passe et d'empêcher toute saisie de caractères dans les inputs qui pourraient altérer les données de la base de données.<br/> La seconde fonctionnalité que j'ai décidé d'implémenter est un système de like/dislike pour chacun des cocktails proposés, l'utilisateur peut alors
-										   voir quels sont les cocktails préférés des autres utilisateurs.
+										<p data-i18n="[html]projects.cocktails.maintenance_description">
+										   Durant ma formation, j'ai du mettre ce projet en maintenance. Après réflexion, j'ai décidé d'implémenter deux nouvelles fonctionnalités pour ce site internet. La première étant la possibilité d'ajouter un cocktail à la base de données à l'aide d'une nouvelle page sur le site. Néanmoins, comme ce site est accessible à tous en public, il fallait vérifier les insertions des utilisateurs. En attente d'un (futur) système de comptes administrateurs et utilisateurs, j'ai décidé de rendre accessible cette page à l'aide d'un mot de passe et d'empêcher toute saisie de caractères dans les inputs qui pourraient altérer les données de la base de données.<br/> La seconde fonctionnalité que j'ai décidé d'implémenter est un système de like/dislike pour chacun des cocktails proposés, l'utilisateur peut alors voir quels sont les cocktails préférés des autres utilisateurs.
 										</p>
 
-										<h4>Veille Technologique</h4>
+										<h4 data-i18n="projects.cocktails.technological_watch_title">Veille Technologique</h4>
 
-										<p>
-											Afin d'implémenter ces deux fonctionnalités, j'ai du réfléchir à quelles technologies j'allais utiliser. Pour le système d'ajout de cocktails dans la base de données, j'ai décidé de réutiliser les technologies que l'on avait utilisées pour le projet c'est à dire le PHP et les formulaires. Grâce à un envoi en POST d'un objet cocktail en JSON (généré avec Javascript), le PHP se charge de récupérer ces données puis de les utiliser pour insérer un nouveau cocktail dans la base de données en gérant toutes les clés étrangères liées aux différentes tables de la base de données. Par conséquent, je n'ai pas fait de veille technologique pour l'implémentation de cette fonctionnalité.<br/> En revanche, pour ce qui est de l'implémentation du système de like/dislike, j'ai du me décider entre deux technologies, la première étant 
-											<a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started"> l'Ajax </a> et la seconde <a href="https://developer.mozilla.org/fr/docs/Web/API/WebSocket">les webSockets</a>. 
-											En effet, pour le confort des utilisateurs, il fallait qu'à chaque like ou dislike, la page ne soit pas rechargée entièrement mais que les données au sein de la base de données soient quand même mises à jour.
+										<p data-i18n="[html]projects.cocktails.technological_watch_description">
+											Afin d'implémenter ces deux fonctionnalités, j'ai du réfléchir à quelles technologies j'allais utiliser. Pour le système d'ajout de cocktails dans la base de données, j'ai décidé de réutiliser les technologies que l'on avait utilisées pour le projet c'est à dire le PHP et les formulaires. Grâce à un envoi en POST d'un objet cocktail en JSON (généré avec Javascript), le PHP se charge de récupérer ces données puis de les utiliser pour insérer un nouveau cocktail dans la base de données en gérant toutes les clés étrangères liées aux différentes tables de la base de données. Par conséquent, je n'ai pas fait de veille technologique pour l'implémentation de cette fonctionnalité.<br/> En revanche, pour ce qui est de l'implémentation du système de like/dislike, j'ai du me décider entre deux technologies, la première étant <a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started"> l'Ajax </a> et la seconde <a href="https://developer.mozilla.org/fr/docs/Web/API/WebSocket">les webSockets</a>. En effet, pour le confort des utilisateurs, il fallait qu'à chaque like ou dislike, la page ne soit pas rechargée entièrement mais que les données au sein de la base de données soient quand même mises à jour.
 										</p>
 
 										<ul class="VeilleTechno">
 
-											<li>AJAX</li>
+											<li data-i18n="projects.cocktails.ajax.title">AJAX</li>
 
-											<p>
+											<p data-i18n="projects.cocktails.ajax.description">
 												La technologie AJAX (Asynchronous Javascript + XML) est une technologie que je maîtrise déjà et que j'ai déjà utilisé dans ce projet, notamment pour l'affichage des cocktails en fonction des différents critères de tri comme la sélection de cocktails en fonction des ingrédients sélectionnés par l'utilisateur. L'AJAX utilise le protocole HTTP et est appelé lors d'une requête client au serveur, ce dernier va alors ensuite envoyer une réponse au client et la connection se termine. Cette technologie est utile lorsqu'il n'y a pas de gros volumes de données à tranférer (notre cas actuellement).
 											</p>
 
-											<li>WebSockets</li>
+											<li data-i18n="projects.cocktails.websockets.title">WebSockets</li>
 
-											<p>
-												WebSockets est une technologie que je ne connais pas encore ou très peu (je suis en ce moment sur un projet qui utilise cette technologie et je suis en train de l'apprendre) mais qui est également utile pour une communication en temps réel avec la base de données. La connexion est donc permanente et on peut constamment échanger des données entre le client et le serveur. WebSocket est donc plus effiace en terme de rapidité et de performance car il n'y a pas besoin de faire la connexion plusieurs fois. Néanmoins, cette technologie est globalement moins sécurisée qu'AJAX même si l'on peut configurer un socket crypté.
-
+											<p data-i18n="projects.cocktails.websockets.description">
+												WebSockets est une technologie que je ne maîtrise pas encore, ou très peu (je travaille actuellement sur un projet qui l'utilise et je suis en train de l'apprendre). Cependant, elle est également utile pour une communication en temps réel avec la base de données. La connexion reste ouverte, ce qui permet un échange continu de données entre le client et le serveur. WebSocket est donc plus efficace en termes de rapidité et de performance, car il n'est pas nécessaire de réétablir la connexion à chaque requête. Néanmoins, cette technologie est généralement moins sécurisée qu'AJAX, bien qu'il soit possible de configurer une socket chiffrée.
 										</ul>
 
-										<p>
-											Les deux technologies AJAX et WebSockets sont toutes le deux intéressantes à utiliser et présentes chacunes leurs spécificités. Néanmoins, pour des raisons de simplicité et de cohérence avec ce que l'on avait pu faire avant, j'ai décidé d'utiliser l'AJAX comme c'est une technologie que je connais et que je maîtrise et qui est globalement mieux sécurisée que WebSockets. De plus, je n'ai pas nécessairement besoin d'établir une connection permanente avec le serveur et la base de données (chose que permet webSockets), puisque le volume de données transmis (une mise à jour d'un colonne d'une table) est très petit.
+										<p data-i18n="projects.cocktails.comparative_analysis">
+											Les technologies AJAX et WebSockets sont toutes deux intéressantes à utiliser, chacune ayant ses spécificités. Cependant, pour des raisons de simplicité et de cohérence avec ce que nous avions fait auparavant, j'ai décidé d'utiliser AJAX, car c'est une technologie que je connais et maîtrise, et qui est globalement plus sécurisée que WebSockets. De plus, je n'ai pas nécessairement besoin d'établir une connexion permanente avec le serveur et la base de données (ce que permet WebSockets), puisque le volume de données transmis (une mise à jour d'une colonne d'une table) est très faible.
 										</p>
 
 									</div>
